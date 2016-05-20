@@ -6,7 +6,8 @@
   text-shadow: 1px 1px 2px #323232;
   display: flex;
   justify-content: space-around;
-  padding-left: 20px;
+  padding: 0 0 0 30px;
+
   a {
     color: white;
     padding: 4px;
@@ -26,4 +27,6 @@
   overflow: hidden;
   text-indent: 100%;
   margin: 0;
+  position: absolute;
+  top: 10px;
 }

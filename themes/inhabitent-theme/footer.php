@@ -10,8 +10,31 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="overall-block">
+					<div class="block">
+						<div class="contact-info">
+							<h3>Contact Info</h3>
+							<p>
+								
+							</p>
+						</div>
+					</div>
+					<div class="block">
+						<div class="business-hours">
+
+						</div>
+					</div>
+					<div class="block">
+						<div class="footer-logo">
+
+						</div>
+					</div>
+				</div>
+
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+					<div class="container">
+						copyright &copy; 2016 inhabitent
+					</div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

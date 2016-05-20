@@ -590,6 +590,10 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.widget-area {
+  width: 27%;
+  padding-left: 5%; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -706,6 +710,43 @@ object {
 .logo {
   height: 275px; }
 
+/* Journal page */
+.page-content {
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  margin: 0;
+  padding-top: 60px; }
+
+.content-area {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 5%;
+  width: 73%; }
+
+.entry-header {
+  position: relative; }
+  .entry-header a {
+    text-decoration: none;
+    color: white; }
+
+.entry-header h2, .blog .entry-header h1, .blog .entry-header h2, .single-post .entry-header h1, .single-post .entry-header h2 {
+  position: absolute;
+  top: 0;
+  background-color: #248a83;
+  color: white; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+.entry-meta, .blog .entry-meta, .single-post .entry-meta {
+  background-color: #248a83;
+  color: white;
+  position: absolute;
+  right: 0; }
+
 .site-header {
   height: 50px;
   background-color: transparent;
@@ -716,7 +757,7 @@ object {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-left: 20px; }
+  padding: 0 0 0 30px; }
   .site-header a {
     color: white;
     padding: 4px; }
@@ -736,4 +777,17 @@ object {
   width: 50px;
   overflow: hidden;
   text-indent: 100%;
-  margin: 0; }
+  margin: 0;
+  position: absolute;
+  top: 10px; }
+
+.site-footer {
+  background: url(../../images/dark-wood.png);
+  background-size: 350px 512px;
+  color: #fff;
+  height: 350px; }
+
+.site-info {
+  text-transform: uppercase;
+  text-align: center;
+  color: white; }

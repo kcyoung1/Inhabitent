@@ -5,7 +5,7 @@
 /* Front page */
 
 .home .home-hero {
-  background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),
+  background: linear-gradient(180deg,rgba(0,0,0,.4)  0,rgba(0,0,0,.4)),
               url(../../images/home-hero.jpg) no-repeat center;
   background-size: cover, cover;
   height: 750px;
@@ -15,4 +15,43 @@
 }
 .logo {
   height: 275px;
+}
+
+/* Journal page */
+
+.page-content {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+    margin: 0;
+    padding-top: 60px;
+}
+.content-area {
+    border-right: 1px solid #e1e1e1;
+    padding-right: 5%;
+    width: 73%;
+}
+.entry-header {
+  position: relative;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+.entry-header h2, .blog .entry-header h1, .blog .entry-header h2, .single-post .entry-header h1, .single-post .entry-header h2 {
+  position: absolute;
+  top: 0;
+  background-color: #248a83;
+  color: white;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+.entry-meta, .blog .entry-meta, .single-post .entry-meta  {
+  background-color: #248a83;
+  color: white;
+  position: absolute;
+  right: 0;
 }
