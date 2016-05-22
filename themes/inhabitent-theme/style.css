@@ -250,14 +250,17 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "merriweather", serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.75; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-family: Novovento Sans Web, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 /* Copy */
 p {
@@ -274,7 +277,7 @@ address {
 
 pre {
   background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: Novovento Sans Web, sans-serif;
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
@@ -358,18 +361,6 @@ table {
   margin: 0 0 1.5em;
   width: 100%; }
 
-body, button, input, select, textarea {
-  color: #404040;
-  font-family: 'merriweather',serif;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.75; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: Novocento Sans Web, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px; }
-
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -443,7 +434,7 @@ a {
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #248a83; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -728,7 +719,10 @@ object {
 .content-area {
   border-right: 1px solid #e1e1e1;
   padding-right: 5%;
-  width: 73%; }
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 73%;
+  margin-left: 30px; }
 
 .entry-header {
   position: relative; }
@@ -740,17 +734,45 @@ object {
   position: absolute;
   top: 0;
   background-color: #248a83;
-  color: white; }
+  color: white;
+  max-width: 75%;
+  padding: 10px 20px;
+  font-size: 2rem;
+  line-height: 1.25; }
 
 img {
   height: auto;
-  max-width: 100%; }
+  width: 100%; }
 
 .entry-meta, .blog .entry-meta, .single-post .entry-meta {
   background-color: #248a83;
   color: white;
   position: absolute;
-  right: 0; }
+  right: 0;
+  bottom: 0;
+  font-family: Novovento Sans Web, sans-serif;
+  text-transform: uppercase;
+  padding: 2.5px 20px;
+  font-size: 0.9rem; }
+
+.moretag {
+  border: 1px solid black;
+  padding: 12.5px 25px;
+  font-family: Novovento Sans Web, sans-serif;
+  text-transform: uppercase;
+  color: black;
+  font-size: 0.9rem; }
+  .moretag:hover {
+    background-color: #248a83;
+    color: white;
+    border: 0; }
+  .moretag:visited {
+    color: black; }
+    .moretag:visited:hover {
+      color: white; }
+
+.readmore a {
+  text-decoration: none; }
 
 .site-header {
   height: 50px;
@@ -792,12 +814,6 @@ img {
   color: #fff;
   height: 350px; }
 
-.site-info {
-  font-family: Novovento Sans Web, sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  color: white; }
-
 .overall-block {
   display: -ms-flexbox;
   display: flex;
@@ -808,11 +824,24 @@ img {
 h3 {
   color: #d99054; }
 
-.footer-logo {
-  max-width: 70%; }
-
 .contact-info a {
   text-decoration: none;
   color: white; }
   .contact-info a:hover {
     text-decoration: underline; }
+
+.business-hours .days {
+  font-weight: bold; }
+
+.footer-logo {
+  max-width: 50%;
+  margin-left: 250px; }
+
+.site-info {
+  font-family: Novovento Sans Web, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  margin-top: 30px; }
+  .site-info .year {
+    font-size: 0.8rem; }

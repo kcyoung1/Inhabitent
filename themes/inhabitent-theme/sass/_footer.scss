@@ -4,12 +4,6 @@
     color: #fff;
     height: 350px;
 }
-.site-info {
-  font-family: Novovento Sans Web, sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  color: white;
-}
 .overall-block {
   display: flex;
   justify-content: space-around;
@@ -18,9 +12,6 @@
 h3 {
   color: #d99054;
 }
-.footer-logo {
-  max-width: 70%;
-}
 .contact-info {
   a {
     text-decoration: none;
@@ -28,5 +19,24 @@ h3 {
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+.business-hours {
+  .days {
+    font-weight: bold;
+  }
+}
+.footer-logo {
+  max-width: 50%;
+  margin-left: 250px;
+}
+.site-info {
+  font-family: $font__pre;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  .year {
+    font-size: 0.8rem;
   }
 }

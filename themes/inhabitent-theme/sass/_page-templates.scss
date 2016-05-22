@@ -30,7 +30,10 @@
 .content-area {
     border-right: 1px solid #e1e1e1;
     padding-right: 5%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     width: 73%;
+    margin-left: 30px;
 }
 .entry-header {
   position: relative;
@@ -44,14 +47,45 @@
   top: 0;
   background-color: #248a83;
   color: white;
+  max-width: 75%;
+  padding: 10px 20px;
+  font-size: 2rem;
+  line-height: 1.25;
 }
 img {
     height: auto;
-    max-width: 100%;
+    width: 100%;
 }
 .entry-meta, .blog .entry-meta, .single-post .entry-meta  {
   background-color: #248a83;
   color: white;
   position: absolute;
   right: 0;
+  bottom: 0;
+  font-family: $font__pre;
+  text-transform: uppercase;
+  padding: 2.5px 20px;
+  font-size: 0.9rem;
+}
+.moretag {
+  border: 1px solid black;
+  padding: 12.5px 25px;
+  font-family: $font__pre;
+  text-transform: uppercase;
+  color: black;
+  font-size: 0.9rem;
+  &:hover {
+    background-color: $color__link-hover;
+    color: white;
+    border: 0;
+  }
+  &:visited {
+    color: black;
+    &:hover {
+      color:white;
+    }
+  }
+}
+.readmore a {
+  text-decoration: none;
 }

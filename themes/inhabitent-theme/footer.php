@@ -15,14 +15,17 @@
 						<div class="contact-info">
 							<h3>Contact Info</h3>
 							<p>
-								<i class="fa fa-envelope-o" aria-hidden="true"></i>
+								<i class="fa fa-envelope" aria-hidden="true"></i>
 								<a href="emailto:info@inhabitent.com">info@inhabitent.com</a>
 							</p>
 							<p>
+								<i class="fa fa-phone"></i>
 								<a href="tel:5553434567891">778-456-7891</a>
 							</p>
 							<p>
-								fb twitter google+
+								fb<i class="fa fa-facebook-square"></i>
+								twit<i class="fa fa-twitter-square"></i>
+								goog<i class="fa fa-google-plus-square"></i>
 							</p>
 						</div>
 					</div>
@@ -49,7 +52,7 @@
 
 				<div class="site-info">
 					<div class="container">
-						copyright &copy; 2016 inhabitent
+						copyright &copy; <span class="year">2016</span> inhabitent
 					</div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
