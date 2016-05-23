@@ -464,37 +464,6 @@ object {
 # Forms
 --------------------------------------------------------------*/
 /* Buttons */
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
-
 /* Fields */
 input[type="text"],
 input[type="email"],
@@ -523,6 +492,100 @@ input[type="search"] {
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+.comments-title {
+  line-height: 1.25;
+  font-size: 2rem;
+  color: #2f1339; }
+
+.comment {
+  padding-top: 10px; }
+
+.comment-list li {
+  border-bottom: 1px solid #e1e1e1; }
+
+.children li {
+  border-top: 1px solid #e1e1e1; }
+
+.comment-body {
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 25px; }
+
+.comment-author-avatar {
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  overflow: hidden;
+  margin-right: 1.5rem; }
+
+a {
+  text-decoration: none;
+  color: #248a83; }
+  a:hover {
+    color: #2f1339; }
+  a:visited {
+    color: #248a83; }
+    a:visited:hover {
+      color: #2f1339; }
+
+.comment-reply-title {
+  font-size: 1.8rem;
+  line-height: 1.25; }
+
+input[type=email], input[type=password], input[type=search], input[type=text], input[type=url], textarea {
+  color: #666666;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  border-radius: 0; }
+
+.comment-form-author {
+  margin-right: 1%;
+  width: 49%; }
+  .comment-form-author input {
+    width: 100%; }
+
+.comment-form-email {
+  margin-right: 1%;
+  width: 49%; }
+  .comment-form-email input {
+    width: 100%; }
+
+.comment-form-url {
+  clear: left;
+  width: 100%; }
+  .comment-form-url input {
+    width: 100%; }
+
+.required {
+  color: #d99054; }
+
+.comment-form-author, .comment-form-email {
+  float: left; }
+
+label {
+  text-transform: uppercase;
+  font-family: Novovento Sans Web, sans-serif;
+  font-size: 1.1rem; }
+
+input[type=submit] {
+  padding: 12.5px 25px;
+  font-family: Novovento Sans Web, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.9rem;
+  background-color: #248a83;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none; }
+  input[type=submit]:hover {
+    background-color: #19625d;
+    color: white;
+    box-shadow: none; }
+  input[type=submit]:visited {
+    color: white; }
+    input[type=submit]:visited:hover {
+      color: white; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -599,14 +662,16 @@ a {
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
-  width: 50%; }
+  width: 50%;
+  display: none; }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
   float: right;
   text-align: right;
-  width: 50%; }
+  width: 50%;
+  display: none; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -721,105 +786,11 @@ a {
   display: none; }
 
 /* Comments */
-.comments-title {
-  line-height: 1.25;
-  font-size: 2rem;
-  color: #2f1339; }
-
 .comment-content a {
   word-wrap: break-word; }
 
 .bypostauthor {
   display: block; }
-
-.comment {
-  padding-top: 10px; }
-
-.comment-list li {
-  border-bottom: 1px solid #e1e1e1; }
-
-.children li {
-  border-top: 1px solid #e1e1e1; }
-
-.comment-body {
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 25px; }
-
-.comment-author-avatar {
-  border-radius: 50%;
-  height: 64px;
-  width: 64px;
-  overflow: hidden;
-  margin-right: 1.5rem; }
-
-a {
-  text-decoration: none;
-  color: #248a83; }
-  a:hover {
-    color: #2f1339; }
-  a:visited {
-    color: #248a83; }
-    a:visited:hover {
-      color: #2f1339; }
-
-.comment-reply-title {
-  font-size: 1.8rem;
-  line-height: 1.25; }
-
-input[type=email], input[type=password], input[type=search], input[type=text], input[type=url], textarea {
-  color: #666666;
-  background-color: #f4f4f4;
-  border: 1px solid #e1e1e1;
-  border-radius: 0; }
-
-.comment-form-author {
-  margin-right: 1%;
-  width: 49%; }
-  .comment-form-author input {
-    width: 100%; }
-
-.comment-form-email {
-  margin-right: 1%;
-  width: 49%; }
-  .comment-form-email input {
-    width: 100%; }
-
-.comment-form-url {
-  clear: left;
-  width: 100%; }
-  .comment-form-url input {
-    width: 100%; }
-
-.required {
-  color: #d99054; }
-
-.comment-form-author, .comment-form-email {
-  float: left; }
-
-label {
-  text-transform: uppercase;
-  font-family: Novovento Sans Web, sans-serif;
-  font-size: 1.1rem; }
-
-input[type=submit] {
-  padding: 12.5px 25px;
-  font-family: Novovento Sans Web, sans-serif;
-  text-transform: uppercase;
-  color: white;
-  font-size: 0.9rem;
-  background-color: #248a83;
-  border-radius: 0;
-  box-shadow: none;
-  text-shadow: none; }
-  input[type=submit]:hover {
-    background-color: #19625d;
-    color: white;
-    box-shadow: none; }
-  input[type=submit]:visited {
-    color: white; }
-    input[type=submit]:visited:hover {
-      color: white; }
 
 .site-footer {
   background: url(../../images/dark-wood.png);
@@ -1036,7 +1007,7 @@ img {
   .moretag:hover {
     background-color: #248a83;
     color: white;
-    border: 0; }
+    border: 1px solid #248a83; }
   .moretag:visited {
     color: black; }
     .moretag:visited:hover {
@@ -1045,5 +1016,10 @@ img {
 .readmore a {
   text-decoration: none; }
 
-.hentry {
-  margin: 0 0 4.5rem; }
+.entry-content span {
+  line-height: 1.5; }
+
+.social-buttons button {
+  background: transparent;
+  padding: 5px 30px;
+  margin-top: 30px; }
