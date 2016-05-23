@@ -16,6 +16,7 @@
 }
 
 .contact-info {
+  line-height: 1.5;
   a {
     text-decoration: none;
     color: white;
@@ -23,8 +24,13 @@
       text-decoration: underline;
     }
   }
+  i {
+    font-size: 1.25rem;
+    padding-right: 7px;
+  }
 }
 .business-hours {
+  line-height: 1.5;
   .days {
     font-weight: bold;
   }

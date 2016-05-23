@@ -23,9 +23,9 @@
 								<a href="tel:5553434567891">778-456-7891</a>
 							</p>
 							<p>
-								fb<i class="fa fa-facebook-square"></i>
-								twit<i class="fa fa-twitter-square"></i>
-								goog<i class="fa fa-google-plus-square"></i>
+								<i class="fa fa-facebook-square"></i>
+								<i class="fa fa-twitter-square"></i>
+								<i class="fa fa-google-plus-square"></i>
 							</p>
 						</div>
 					</div>

@@ -11,6 +11,15 @@
   a {
     color: white;
     padding: 4px;
+    &:hover {
+      color: #f0e4d1;
+    }
+    &:visited {
+      color:white;
+      &:hover {
+        color: #f0e4d1;
+      }
+    }
   }
 }
 .header-bar {

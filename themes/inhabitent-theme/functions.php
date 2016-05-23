@@ -93,6 +93,13 @@ function red_starter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
+//////// FONT AWESOME ////////
+
+function enqueue_our_required_stylesheets(){
+	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+}
+add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
+
 /**
  * Custom template tags for this theme.
  */
@@ -103,7 +110,7 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
-
+//// READ MORE BUTTON in JOUNRAL SINGLE POST ////
 function new_excerpt_more($more) {
        global $post;
 	return ' [...] <p class="readmore"> <a class="moretag" href="'. get_permalink($post->ID) . '"> Read More &#x2192; </a></p>';

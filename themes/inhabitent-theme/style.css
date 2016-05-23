@@ -435,6 +435,12 @@ object {
   .site-header a {
     color: white;
     padding: 4px; }
+    .site-header a:hover {
+      color: #f0e4d1; }
+    .site-header a:visited {
+      color: white; }
+      .site-header a:visited:hover {
+        color: #f0e4d1; }
 
 .header-bar {
   display: -ms-flexbox;
@@ -818,14 +824,21 @@ a {
 .block h3 {
   color: #d99054; }
 
-.contact-info a {
-  text-decoration: none;
-  color: white; }
-  .contact-info a:hover {
-    text-decoration: underline; }
+.contact-info {
+  line-height: 1.5; }
+  .contact-info a {
+    text-decoration: none;
+    color: white; }
+    .contact-info a:hover {
+      text-decoration: underline; }
+  .contact-info i {
+    font-size: 1.25rem;
+    padding-right: 7px; }
 
-.business-hours .days {
-  font-weight: bold; }
+.business-hours {
+  line-height: 1.5; }
+  .business-hours .days {
+    font-weight: bold; }
 
 .footer-logo {
   max-width: 50%;
@@ -974,7 +987,7 @@ a {
   padding-top: 3rem;
   padding-bottom: 3rem;
   width: 73%;
-  margin-left: 30px; }
+  margin-left: 150px; }
 
 .entry-header {
   position: relative; }
@@ -1026,8 +1039,10 @@ img {
 .readmore a {
   text-decoration: none; }
 
-.entry-content span {
-  line-height: 1.5; }
+.entry-content {
+  margin-bottom: 80px; }
+  .entry-content span {
+    line-height: 1.5; }
 
 .cat-links, .tags-links {
   text-transform: uppercase;
