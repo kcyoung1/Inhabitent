@@ -774,6 +774,9 @@ img {
 .readmore a {
   text-decoration: none; }
 
+.hentry {
+  margin: 0 0 4.5rem; }
+
 .site-header {
   height: 50px;
   background-color: transparent;

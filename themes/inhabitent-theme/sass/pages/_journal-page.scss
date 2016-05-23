@@ -1,21 +1,4 @@
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
 
-/* Front page */
-
-.home .home-hero {
-  background: linear-gradient(180deg,rgba(0,0,0,.4)  0,rgba(0,0,0,.4)),
-              url(../../images/home-hero.jpg) no-repeat center;
-  background-size: cover, cover;
-  height: 750px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.logo {
-  height: 275px;
-}
 
 /* Journal page */
 
@@ -88,4 +71,7 @@ img {
 }
 .readmore a {
   text-decoration: none;
+}
+.hentry {
+    margin: 0 0 4.5rem;
 }

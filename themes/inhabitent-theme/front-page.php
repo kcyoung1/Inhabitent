@@ -27,6 +27,23 @@ get_header(); ?>
 			<!-- Latest Adventures -->
 
 				<!-- Stretch goal - Mandi used floats -->
+				<section class="adventures container">
+					<h2>Latest Adventures</h2>
+					<ul>
+						<li>
+							<div class="story-wrap">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/adventure/canoe-girl.jpg" alt="Canoe Girl" />
+								<div class="story-info">
+									<h3>Getting Back to Nature in a Canoe</h3>
+									<a href="#" class="moretag">Read More</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<p>
+						<a href="#">More Adventures</a>
+					</p>
+				</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
