@@ -577,7 +577,8 @@ input[type=submit] {
   background-color: #248a83;
   border-radius: 0;
   box-shadow: none;
-  text-shadow: none; }
+  text-shadow: none;
+  border: 0; }
   input[type=submit]:hover {
     background-color: #19625d;
     color: white;
@@ -586,6 +587,15 @@ input[type=submit] {
     color: white; }
     input[type=submit]:visited:hover {
       color: white; }
+
+.logged-in-as a {
+  color: #248a83; }
+  .logged-in-as a:visited {
+    color: #248a83; }
+    .logged-in-as a:visited:hover {
+      color: #5ac4c1; }
+  .logged-in-as a:hover {
+    color: #5ac4c1; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -1018,6 +1028,17 @@ img {
 
 .entry-content span {
   line-height: 1.5; }
+
+.cat-links, .tags-links {
+  text-transform: uppercase;
+  font-family: Novovento Sans Web, sans-serif; }
+  .cat-links a, .tags-links a {
+    color: #248a83; }
+    .cat-links a:hover, .tags-links a:hover {
+      color: #2f1339; }
+
+.tags-links {
+  padding-left: 30px; }
 
 .social-buttons button {
   background: transparent;

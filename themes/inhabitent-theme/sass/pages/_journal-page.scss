@@ -78,6 +78,19 @@ img {
     line-height: 1.5;
   }
 }
+.cat-links, .tags-links {
+  text-transform: uppercase;
+  font-family: $font__pre;
+  a {
+    color: $color__link-hover;
+    &:hover {
+      color: #2f1339;
+    }
+  }
+}
+.tags-links {
+  padding-left: 30px;
+}
 .social-buttons button {
   background: transparent;
   padding: 5px 30px;

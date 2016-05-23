@@ -88,6 +88,7 @@ input[type=submit] {
 	border-radius: 0;
 	box-shadow: none;
 	text-shadow: none;
+  border: 0;
   &:hover {
     background-color: #19625d ;
     color: white;
@@ -98,5 +99,17 @@ input[type=submit] {
     &:hover {
       color:white;
     }
+  }
+}
+.logged-in-as a {
+  color: $color__link-hover;
+  &:visited {
+    color: $color__link-hover;
+    &:hover {
+      color: rgb(90, 196, 193);
+    }
+  }
+  &:hover {
+    color: rgb(90, 196, 193);
   }
 }
