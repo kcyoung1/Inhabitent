@@ -16,6 +16,7 @@
 // Latest Adventures
 
 .adventures {
+  margin-bottom: 60px;
   h2 {
     text-align: center;
     font-size: 2.5rem;
@@ -119,9 +120,9 @@
   color: white;
   font-size: 0.9rem;
   &:hover {
-    background-color: $color__link-hover;
+    background-color: $color__link;
     color: white;
-    border: 1px solid $color__link-hover;
+    border: 1px solid $color__link;
     outline: 0;
   }
   &:active {
@@ -140,10 +141,10 @@
   font-family: $font__pre;
   text-transform: uppercase;
   color: white;
-  font-size: 0.9rem;
-  background-color: $color__link-hover;
+  font-size: 1.1rem;
+  background-color: $color__link;
   &:hover {
-    background-color: #19625d ;
+    background-color: $color__link-hover;
     color: white;
   }
   &:visited {

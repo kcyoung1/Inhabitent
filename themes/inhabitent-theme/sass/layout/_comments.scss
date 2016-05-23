@@ -25,12 +25,12 @@
 }
 a {
 	text-decoration: none;
-	color: $color__link-hover;
+	color: $color__link;
 	&:hover {
 		color: #2f1339;
 	}
 	&:visited {
-		color: $color__link-hover;
+		color: $color__link;
 		&:hover {
 			color: #2f1339;
 		}
@@ -84,13 +84,13 @@ input[type=submit] {
   text-transform: uppercase;
   color: white;
   font-size: 0.9rem;
-  background-color: $color__link-hover;
+  background-color: $color__link;
 	border-radius: 0;
 	box-shadow: none;
 	text-shadow: none;
   border: 0;
   &:hover {
-    background-color: #19625d ;
+    background-color: $color__link-hover;
     color: white;
 		box-shadow: none;
   }
@@ -102,9 +102,9 @@ input[type=submit] {
   }
 }
 .logged-in-as a {
-  color: $color__link-hover;
+  color: $color__link;
   &:visited {
-    color: $color__link-hover;
+    color: $color__link;
     &:hover {
       color: rgb(90, 196, 193);
     }

@@ -608,11 +608,11 @@ input[type=submit] {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #248a83; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
-    color: #248a83; }
+    color: #19625d; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -769,6 +769,30 @@ a {
 .widget-area {
   width: 27%;
   padding-left: 5%; }
+  .widget-area h2 {
+    color: #2f1339; }
+  .widget-area a {
+    color: #248a83; }
+    .widget-area a:hover {
+      color: #19625d; }
+    .widget-area a:visited {
+      color: #248a83; }
+      .widget-area a:visited:hover {
+        color: #19625d; }
+
+.textwidget p {
+  display: -ms-flexbox;
+  display: flex; }
+
+.textwidget i {
+  margin-right: 10px;
+  line-height: 1.8rem;
+  width: 20px; }
+
+.widget_archive ul {
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none; }
 
 /*--------------------------------------------------------------
 # Content
@@ -825,6 +849,7 @@ a {
   color: #d99054; }
 
 .contact-info {
+  margin-left: 50px;
   line-height: 1.5; }
   .contact-info a {
     text-decoration: none;
@@ -836,6 +861,7 @@ a {
     padding-right: 7px; }
 
 .business-hours {
+  margin-left: 50px;
   line-height: 1.5; }
   .business-hours .days {
     font-weight: bold; }
@@ -868,47 +894,46 @@ a {
 .logo {
   height: 275px; }
 
-.adventures h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: normal; }
-
-.adventures h3 a {
-  color: white;
-  font-family: "merriweather", serif;
-  text-transform: none;
-  font-size: 2rem;
-  font-weight: 400; }
-  .adventures h3 a:hover {
-    color: #f0e4d1; }
-
-.adventures a {
-  text-decoration: none; }
-
-.adventures ul {
-  list-style: none;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-left: 0;
-  margin-left: 0; }
-  .adventures ul li:first-child {
-    margin-right: 1%;
-    -ms-flex: 0 1 49%;
-        flex: 0 1 49%; }
-  .adventures ul li:nth-child(2) {
-    -ms-flex: 0 1 49%;
-        flex: 0 1 49%; }
-  .adventures ul li:nth-child(3) {
-    -ms-flex: 0 1 24%;
-        flex: 0 1 24%;
-    margin-top: 0.5%; }
-  .adventures ul li:last-child {
-    -ms-flex: 0 1 24%;
-        flex: 0 1 24%;
-    margin-left: 1%;
-    margin-top: 0.5%; }
+.adventures {
+  margin-bottom: 60px; }
+  .adventures h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: normal; }
+  .adventures h3 a {
+    color: white;
+    font-family: "merriweather", serif;
+    text-transform: none;
+    font-size: 2rem;
+    font-weight: 400; }
+    .adventures h3 a:hover {
+      color: #f0e4d1; }
+  .adventures a {
+    text-decoration: none; }
+  .adventures ul {
+    list-style: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 0;
+    margin-left: 0; }
+    .adventures ul li:first-child {
+      margin-right: 1%;
+      -ms-flex: 0 1 49%;
+          flex: 0 1 49%; }
+    .adventures ul li:nth-child(2) {
+      -ms-flex: 0 1 49%;
+          flex: 0 1 49%; }
+    .adventures ul li:nth-child(3) {
+      -ms-flex: 0 1 24%;
+          flex: 0 1 24%;
+      margin-top: 0.5%; }
+    .adventures ul li:last-child {
+      -ms-flex: 0 1 24%;
+          flex: 0 1 24%;
+      margin-left: 1%;
+      margin-top: 0.5%; }
 
 .canoe {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure/canoe-girl.jpg) no-repeat center center;
@@ -961,7 +986,7 @@ a {
   font-family: Novovento Sans Web, sans-serif;
   text-transform: uppercase;
   color: white;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   background-color: #248a83; }
   .more-adventures:hover {
     background-color: #19625d;
@@ -978,7 +1003,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 1120px;
-  margin: 0;
+  margin-top: 0;
   padding-top: 60px; }
 
 .content-area {
@@ -986,8 +1011,7 @@ a {
   padding-right: 5%;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  width: 73%;
-  margin-left: 150px; }
+  width: 73%; }
 
 .entry-header {
   position: relative; }
@@ -1020,6 +1044,9 @@ img {
   padding: 2.5px 20px;
   font-size: 0.9rem; }
 
+.entry-meta a:hover {
+  color: #f0e4d1; }
+
 .moretag {
   border: 1px solid black;
   padding: 12.5px 25px;
@@ -1042,7 +1069,9 @@ img {
 .entry-content {
   margin-bottom: 80px; }
   .entry-content span {
-    line-height: 1.5; }
+    line-height: 1.5;
+    letter-spacing: .5px;
+    font-size: 1rem; }
 
 .cat-links, .tags-links {
   text-transform: uppercase;

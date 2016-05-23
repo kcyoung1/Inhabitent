@@ -1,3 +1,4 @@
+
 .site-footer {
     background: url(../../images/dark-wood.png);
     background-size: 350px 512px;
@@ -16,6 +17,7 @@
 }
 
 .contact-info {
+  margin-left: 50px;
   line-height: 1.5;
   a {
     text-decoration: none;
@@ -30,6 +32,7 @@
   }
 }
 .business-hours {
+  margin-left: 50px;
   line-height: 1.5;
   .days {
     font-weight: bold;
