@@ -801,36 +801,53 @@ a {
   list-style: none;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-left: 0;
   margin-left: 0; }
   .adventures ul li:first-child {
-    border-right: 20px solid #fff;
-    -ms-flex: 0 1 25%;
-        flex: 0 1 25%; }
+    margin-right: 1%;
+    -ms-flex: 0 1 49%;
+        flex: 0 1 49%; }
   .adventures ul li:nth-child(2) {
-    -ms-flex: 0 1 25%;
-        flex: 0 1 25%; }
+    -ms-flex: 0 1 49%;
+        flex: 0 1 49%; }
   .adventures ul li:nth-child(3) {
-    -ms-flex: 0 1 12.5%;
-        flex: 0 1 12.5%; }
+    -ms-flex: 0 1 24%;
+        flex: 0 1 24%;
+    margin-top: 0.5%; }
   .adventures ul li:last-child {
-    -ms-flex: 0 1 12.5%;
-        flex: 0 1 12.5%; }
+    -ms-flex: 0 1 24%;
+        flex: 0 1 24%;
+    margin-left: 1%;
+    margin-top: 0.5%; }
+
+.canoe {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure/canoe-girl.jpg) no-repeat center center;
+  background-size: cover, cover;
+  height: 600px; }
+
+.bonfire {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure/beach-bonfire.jpg) no-repeat center center;
+  background-size: cover, cover;
+  height: 300px; }
+
+.hikers {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure/mountain-hikers.jpg) no-repeat center center;
+  background-size: cover, cover;
+  height: 300px; }
+
+.night-sky {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure/night-sky.jpg) no-repeat center center;
+  background-size: cover, cover;
+  height: 300px; }
 
 .story-wrap {
   position: relative; }
-  .story-wrap:after {
-    background: rgba(0, 0, 0, 0.35);
-    position: absolute;
-    height: 100%; }
-  .story-wrap img {
-    max-width: none;
-    max-height: 620px;
-    width: auto; }
   .story-wrap .story-info {
     position: absolute;
     top: 0;
-    left: 0; }
+    left: 20px; }
 
 .readtag {
   border: 1px solid white;
@@ -842,7 +859,10 @@ a {
   .readtag:hover {
     background-color: #248a83;
     color: white;
-    border: 0; }
+    border: 1px solid #248a83;
+    outline: 0; }
+  .readtag:active {
+    outline: 0; }
   .readtag:visited {
     color: black; }
     .readtag:visited:hover {

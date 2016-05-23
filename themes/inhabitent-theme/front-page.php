@@ -31,8 +31,7 @@ get_header(); ?>
 					<h2>Latest Adventures</h2>
 					<ul class="clearfix">
 						<li>
-							<div class="story-wrap">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/adventure/canoe-girl.jpg" alt="Canoe Girl" />
+							<div class="story-wrap canoe">
 								<div class="story-info">
 									<h3><a href="#">Getting Back to Nature in a Canoe</a></h3>
 									<a href="#" class="readtag">Read More</a>
@@ -40,8 +39,7 @@ get_header(); ?>
 							</div>
 						</li>
 						<li>
-							<div class="story-wrap">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/adventure/beach-bonfire.jpg" alt="Beach Bonfire" />
+							<div class="story-wrap bonfire">
 								<div class="story-info">
 									<h3><a href="#">A Night with Friends at the Beach</a></h3>
 									<a href="#" class="readtag">Read More</a>
@@ -49,8 +47,7 @@ get_header(); ?>
 							</div>
 						</li>
 						<li>
-							<div class="story-wrap">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/adventure/mountain-hikers.jpg" alt="Mountain Hikers" />
+							<div class="story-wrap hikers">
 								<div class="story-info">
 									<h3><a href="#">Taking in the View at Big Mountain</a></h3>
 									<a href="#" class="readtag">Read More</a>
@@ -58,8 +55,7 @@ get_header(); ?>
 							</div>
 						</li>
 						<li>
-							<div class="story-wrap">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/adventure/night-sky.jpg" alt="Night Sky" />
+							<div class="story-wrap night-sky">
 								<div class="story-info">
 									<h3><a href="#">Star-Gazing at the Night Sky</a></h3>
 									<a href="#" class="readtag">Read More</a>
