@@ -221,27 +221,6 @@ th {
   padding: 0; }
 
 /*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
-@font-face {
-  font-family: 'merriweather';
-  src: url("../../fonts/merriweather/merriweather-bold-webfont.woff2") format("woff2"), url("../../fonts/merriweather/merriweather-bold-webfont.woff") format("woff");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'merriweather';
-  src: url("../../fonts/merriweather/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather/merriweather-bolditalic-webfont.woff") format("woff");
-  font-weight: bold;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'merriweather';
-  src: url("../../fonts/merriweather/merriweather-light-webfont.woff2") format("woff2"), url("../../fonts/merriweather/merriweather-light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-/*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
 body,
@@ -303,6 +282,27 @@ big {
   font-size: 125%; }
 
 /*--------------------------------------------------------------
+# Embedded Fonts
+--------------------------------------------------------------*/
+@font-face {
+  font-family: 'merriweather';
+  src: url("../../fonts/merriweather/merriweather-bold-webfont.woff2") format("woff2"), url("../../fonts/merriweather/merriweather-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../../fonts/merriweather/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather/merriweather-bolditalic-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../../fonts/merriweather/merriweather-light-webfont.woff2") format("woff2"), url("../../fonts/merriweather/merriweather-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
 html {
@@ -360,6 +360,105 @@ img {
 table {
   margin: 0 0 1.5em;
   width: 100%; }
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0; }
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%; }
+
+/* Captions */
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%; }
+  .wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .wp-caption .wp-caption-text {
+    margin: 0.8075em 0; }
+
+.wp-caption-text {
+  text-align: center; }
+
+/* Galleries*/
+.gallery {
+  margin-bottom: 1.5em; }
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%; }
+  .gallery-columns-2 .gallery-item {
+    max-width: 50%; }
+  .gallery-columns-3 .gallery-item {
+    max-width: 33.33%; }
+  .gallery-columns-4 .gallery-item {
+    max-width: 25%; }
+  .gallery-columns-5 .gallery-item {
+    max-width: 20%; }
+  .gallery-columns-6 .gallery-item {
+    max-width: 16.66%; }
+  .gallery-columns-7 .gallery-item {
+    max-width: 14.28%; }
+  .gallery-columns-8 .gallery-item {
+    max-width: 12.5%; }
+  .gallery-columns-9 .gallery-item {
+    max-width: 11.11%; }
+
+.gallery-caption {
+  display: block; }
+
+.site-header {
+  height: 50px;
+  background-color: transparent;
+  border-bottom: 0;
+  position: fixed;
+  text-shadow: 1px 1px 2px #323232;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 0 0 30px; }
+  .site-header a {
+    color: white;
+    padding: 4px; }
+
+.header-bar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 10px 0 0 20px;
+  margin-bottom: 20px; }
+
+.site-title {
+  background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
+  background-size: 50px;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  text-indent: 100%;
+  margin: 0;
+  position: absolute;
+  top: 10px; }
+
+.main-navigation a {
+  color: white; }
+  .main-navigation a:visited {
+    color: white; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -628,69 +727,44 @@ a {
 .bypostauthor {
   display: block; }
 
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-.page-content .wp-smiley,
-.entry-content .wp-smiley,
-.comment-content .wp-smiley {
-  border: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0; }
+.site-footer {
+  background: url(../../images/dark-wood.png);
+  background-size: 350px 512px;
+  color: #fff;
+  height: 350px; }
 
-/* Make sure embeds and iframes fit their containers. */
-embed,
-iframe,
-object {
-  max-width: 100%; }
+.overall-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 50px; }
 
-/* Captions */
-.wp-caption {
-  margin-bottom: 1.5em;
-  max-width: 100%; }
-  .wp-caption img[class*="wp-image-"] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
-  .wp-caption .wp-caption-text {
-    margin: 0.8075em 0; }
+.block h3 {
+  color: #d99054; }
 
-.wp-caption-text {
-  text-align: center; }
+.contact-info a {
+  text-decoration: none;
+  color: white; }
+  .contact-info a:hover {
+    text-decoration: underline; }
 
-/* Galleries*/
-.gallery {
-  margin-bottom: 1.5em; }
+.business-hours .days {
+  font-weight: bold; }
 
-.gallery-item {
-  display: inline-block;
+.footer-logo {
+  max-width: 50%;
+  margin-left: 250px; }
+
+.site-info {
+  font-family: Novovento Sans Web, sans-serif;
+  text-transform: uppercase;
   text-align: center;
-  vertical-align: top;
-  width: 100%; }
-  .gallery-columns-2 .gallery-item {
-    max-width: 50%; }
-  .gallery-columns-3 .gallery-item {
-    max-width: 33.33%; }
-  .gallery-columns-4 .gallery-item {
-    max-width: 25%; }
-  .gallery-columns-5 .gallery-item {
-    max-width: 20%; }
-  .gallery-columns-6 .gallery-item {
-    max-width: 16.66%; }
-  .gallery-columns-7 .gallery-item {
-    max-width: 14.28%; }
-  .gallery-columns-8 .gallery-item {
-    max-width: 12.5%; }
-  .gallery-columns-9 .gallery-item {
-    max-width: 11.11%; }
+  color: white;
+  margin-top: 30px; }
+  .site-info .year {
+    font-size: 0.8rem; }
 
-.gallery-caption {
-  display: block; }
-
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
 /* Front page */
 .home .home-hero {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../images/home-hero.jpg) no-repeat center;
@@ -705,6 +779,89 @@ object {
 
 .logo {
   height: 275px; }
+
+.adventures h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: normal; }
+
+.adventures h3 a {
+  color: white;
+  font-family: "merriweather", serif;
+  text-transform: none;
+  font-size: 2rem;
+  font-weight: 400; }
+  .adventures h3 a:hover {
+    color: #f0e4d1; }
+
+.adventures a {
+  text-decoration: none; }
+
+.adventures ul {
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  margin-left: 0; }
+  .adventures ul li:first-child {
+    border-right: 20px solid #fff;
+    -ms-flex: 0 1 25%;
+        flex: 0 1 25%; }
+  .adventures ul li:nth-child(2) {
+    -ms-flex: 0 1 25%;
+        flex: 0 1 25%; }
+  .adventures ul li:nth-child(3) {
+    -ms-flex: 0 1 12.5%;
+        flex: 0 1 12.5%; }
+  .adventures ul li:last-child {
+    -ms-flex: 0 1 12.5%;
+        flex: 0 1 12.5%; }
+
+.story-wrap {
+  position: relative; }
+  .story-wrap:after {
+    background: rgba(0, 0, 0, 0.35);
+    position: absolute;
+    height: 100%; }
+  .story-wrap img {
+    max-width: none;
+    max-height: 620px;
+    width: auto; }
+  .story-wrap .story-info {
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.readtag {
+  border: 1px solid white;
+  padding: 12.5px 25px;
+  font-family: Novovento Sans Web, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.9rem; }
+  .readtag:hover {
+    background-color: #248a83;
+    color: white;
+    border: 0; }
+  .readtag:visited {
+    color: black; }
+    .readtag:visited:hover {
+      color: white; }
+
+.more-adventures {
+  padding: 12.5px 25px;
+  font-family: Novovento Sans Web, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.9rem;
+  background-color: #248a83; }
+  .more-adventures:hover {
+    background-color: #19625d;
+    color: white; }
+  .more-adventures:visited {
+    color: white; }
+    .more-adventures:visited:hover {
+      color: white; }
 
 /* Journal page */
 .page-content {
@@ -776,75 +933,3 @@ img {
 
 .hentry {
   margin: 0 0 4.5rem; }
-
-.site-header {
-  height: 50px;
-  background-color: transparent;
-  border-bottom: 0;
-  position: fixed;
-  text-shadow: 1px 1px 2px #323232;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 0 0 0 30px; }
-  .site-header a {
-    color: white;
-    padding: 4px; }
-
-.header-bar {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  padding: 10px 0 0 20px;
-  margin-bottom: 20px; }
-
-.site-title {
-  background: url(../../images/inhabitent-logo-tent-white.svg) no-repeat;
-  background-size: 50px;
-  height: 50px;
-  width: 50px;
-  overflow: hidden;
-  text-indent: 100%;
-  margin: 0;
-  position: absolute;
-  top: 10px; }
-
-.site-footer {
-  background: url(../../images/dark-wood.png);
-  background-size: 350px 512px;
-  color: #fff;
-  height: 350px; }
-
-.overall-block {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-top: 50px; }
-
-h3 {
-  color: #d99054; }
-
-.contact-info a {
-  text-decoration: none;
-  color: white; }
-  .contact-info a:hover {
-    text-decoration: underline; }
-
-.business-hours .days {
-  font-weight: bold; }
-
-.footer-logo {
-  max-width: 50%;
-  margin-left: 250px; }
-
-.site-info {
-  font-family: Novovento Sans Web, sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  color: white;
-  margin-top: 30px; }
-  .site-info .year {
-    font-size: 0.8rem; }

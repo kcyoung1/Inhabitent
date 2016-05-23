@@ -45,7 +45,7 @@
 					</div>
 					<div class="block">
 						<div class="footer-logo">
-							<a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/inhabitent-logo-text.svg" alt="Inhabitent Logo" /></a>
+							<a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" alt="Inhabitent Logo" /></a>
 						</div>
 					</div>
 				</div>

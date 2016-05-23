@@ -13,3 +13,105 @@
 .logo {
   height: 275px;
 }
+
+// Latest Adventures
+
+.adventures {
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: normal;
+  }
+  h3 {
+    a {
+      color: white;
+      font-family: $font__main;
+      text-transform: none;
+      font-size: 2rem;
+      font-weight: 400;
+      &:hover {
+        color: #f0e4d1;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  margin-left: 0;
+  li {
+    &:first-child {
+      border-right: 20px solid #fff;
+      flex: 0 1 25%;
+    }
+    &:nth-child(2) {
+      flex: 0 1 25%;
+    }
+    &:nth-child(3) {
+      flex: 0 1 12.5%;
+    }
+    &:last-child {
+      flex: 0 1 12.5%;
+    }
+  }
+  }
+}
+.story-wrap {
+  position: relative;
+  &:after {
+    background: rgba(0,0,0,.35);
+    position: absolute;
+    height: 100%;
+  }
+  img {
+    max-width: none;
+    max-height: 620px;
+    width: auto;
+
+  }
+  .story-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.readtag {
+  border: 1px solid white;
+  padding: 12.5px 25px;
+  font-family: $font__pre;
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.9rem;
+  &:hover {
+    background-color: $color__link-hover;
+    color: white;
+    border: 0;
+  }
+  &:visited {
+    color: black;
+    &:hover {
+      color:white;
+    }
+  }
+}
+.more-adventures {
+  padding: 12.5px 25px;
+  font-family: $font__pre;
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.9rem;
+  background-color: $color__link-hover;
+  &:hover {
+    background-color: #19625d ;
+    color: white;
+  }
+  &:visited {
+    color: white;
+    &:hover {
+      color:white;
+    }
+  }
+}

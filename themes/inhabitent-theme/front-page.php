@@ -13,7 +13,7 @@ get_header(); ?>
 			<!-- Hero Image -->
 
 				<section class="home-hero">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/inhabitent-logo-full.svg" class="logo" alt="Inhabitent Logo" />
+					<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" class="logo" alt="Inhabitent Logo" />
 				</section>
 
 			<!-- Shop Stuff -->
@@ -29,19 +29,46 @@ get_header(); ?>
 				<!-- Stretch goal - Mandi used floats -->
 				<section class="adventures container">
 					<h2>Latest Adventures</h2>
-					<ul>
+					<ul class="clearfix">
 						<li>
 							<div class="story-wrap">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/adventure/canoe-girl.jpg" alt="Canoe Girl" />
 								<div class="story-info">
-									<h3>Getting Back to Nature in a Canoe</h3>
-									<a href="#" class="moretag">Read More</a>
+									<h3><a href="#">Getting Back to Nature in a Canoe</a></h3>
+									<a href="#" class="readtag">Read More</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-wrap">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/adventure/beach-bonfire.jpg" alt="Beach Bonfire" />
+								<div class="story-info">
+									<h3><a href="#">A Night with Friends at the Beach</a></h3>
+									<a href="#" class="readtag">Read More</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-wrap">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/adventure/mountain-hikers.jpg" alt="Mountain Hikers" />
+								<div class="story-info">
+									<h3><a href="#">Taking in the View at Big Mountain</a></h3>
+									<a href="#" class="readtag">Read More</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="story-wrap">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/adventure/night-sky.jpg" alt="Night Sky" />
+								<div class="story-info">
+									<h3><a href="#">Star-Gazing at the Night Sky</a></h3>
+									<a href="#" class="readtag">Read More</a>
 								</div>
 							</div>
 						</li>
 					</ul>
 					<p>
-						<a href="#">More Adventures</a>
+						<a href="#" class="more-adventures">More Adventures</a>
 					</p>
 				</section>
 

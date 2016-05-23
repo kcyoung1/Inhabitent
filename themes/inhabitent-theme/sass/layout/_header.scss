@@ -20,7 +20,7 @@
   margin-bottom: 20px;
 }
 .site-title {
-  background: url(../../images/inhabitent-logo-tent-white.svg) no-repeat;
+  background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
   background-size: 50px;
   height: 50px;
   width: 50px;
@@ -29,4 +29,10 @@
   margin: 0;
   position: absolute;
   top: 10px;
+}
+.main-navigation a {
+  color: white;
+  &:visited {
+    color: white;
+  }
 }
