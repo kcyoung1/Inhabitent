@@ -63,7 +63,7 @@ get_header(); ?>
 							</div>
 						</li>
 					</ul>
-					<p>
+					<p class="clearfix">
 						<a href="#" class="more-adventures">More Adventures</a>
 					</p>
 				</section>

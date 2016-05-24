@@ -431,7 +431,7 @@ object {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0 0 0 30px; }
+  padding: 0 0 0 150px; }
   .site-header a {
     color: white;
     padding: 4px; }
@@ -459,7 +459,8 @@ object {
   text-indent: 100%;
   margin: 0;
   position: absolute;
-  top: 10px; }
+  top: 10px;
+  left: 150px; }
 
 .main-navigation a {
   color: white; }
@@ -895,7 +896,7 @@ a {
   height: 275px; }
 
 .adventures {
-  margin-bottom: 60px; }
+  margin-bottom: 70px; }
   .adventures h2 {
     text-align: center;
     font-size: 2.5rem;
@@ -908,37 +909,35 @@ a {
     font-weight: 400; }
     .adventures h3 a:hover {
       color: #f0e4d1; }
+  .adventures p {
+    padding-top: 40px; }
   .adventures a {
     text-decoration: none; }
   .adventures ul {
     list-style: none;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: inline;
     padding-left: 0;
     margin-left: 0; }
     .adventures ul li:first-child {
-      margin-right: 1%;
-      -ms-flex: 0 1 49%;
-          flex: 0 1 49%; }
+      width: 49%;
+      float: left; }
     .adventures ul li:nth-child(2) {
-      -ms-flex: 0 1 49%;
-          flex: 0 1 49%; }
+      width: 49%;
+      float: right; }
     .adventures ul li:nth-child(3) {
-      -ms-flex: 0 1 24%;
-          flex: 0 1 24%;
-      margin-top: 0.5%; }
-    .adventures ul li:last-child {
-      -ms-flex: 0 1 24%;
-          flex: 0 1 24%;
+      width: 24%;
+      float: right;
       margin-left: 1%;
-      margin-top: 0.5%; }
+      margin-top: 1.75%; }
+    .adventures ul li:last-child {
+      width: 24%;
+      float: right;
+      margin-top: 1.75%; }
 
 .canoe {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure/canoe-girl.jpg) no-repeat center center;
   background-size: cover, cover;
-  height: 600px; }
+  height: 620px; }
 
 .bonfire {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure/beach-bonfire.jpg) no-repeat center center;
