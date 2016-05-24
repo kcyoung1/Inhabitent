@@ -7,7 +7,9 @@
   display: flex;
   justify-content: space-around;
   padding: 0 0 0 150px;
-
+  z-index: 999;
+  width: 100%;
+  background: rgba(150, 147, 148, 0.63);
   a {
     color: white;
     padding: 4px;

@@ -33,9 +33,9 @@
 	<footer class="entry-footer">
 		<?php red_starter_entry_footer(); ?>
 		<div class="social-buttons">
-			<button type="button" name="button" class="moretag">Like</button>
-			<button type="button" name="button" class="moretag">tweet</button>
-			<button type="button" name="button" class="moretag">Pin</button>
+			<button type="button" name="button" class="moretag"><i class="fa fa-facebook"></i> Like</button>
+			<button type="button" name="button" class="moretag"><i class="fa fa-twitter"></i> tweet</button>
+			<button type="button" name="button" class="moretag"><i class="fa fa-pinterest"></i> Pin</button>
 		</div>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

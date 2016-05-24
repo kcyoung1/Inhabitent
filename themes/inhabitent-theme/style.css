@@ -431,7 +431,10 @@ object {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0 0 0 150px; }
+  padding: 0 0 0 150px;
+  z-index: 999;
+  width: 100%;
+  background: rgba(150, 147, 148, 0.63); }
   .site-header a {
     color: white;
     padding: 4px; }
@@ -611,7 +614,7 @@ input[type=submit] {
 a {
   color: #248a83; }
   a:visited {
-    color: purple; }
+    color: #2f1339; }
   a:hover, a:focus, a:active {
     color: #19625d; }
   a:focus {
@@ -769,7 +772,8 @@ a {
 
 .widget-area {
   width: 27%;
-  padding-left: 5%; }
+  padding-left: 5%;
+  padding-top: 3rem; }
   .widget-area h2 {
     color: #2f1339; }
   .widget-area a {
@@ -1007,9 +1011,7 @@ a {
 
 .content-area {
   border-right: 1px solid #e1e1e1;
-  padding-right: 5%;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 3.25rem 5% 3rem 0;
   width: 73%; }
 
 .entry-header {
@@ -1062,15 +1064,15 @@ img {
     .moretag:visited:hover {
       color: white; }
 
-.readmore a {
-  text-decoration: none; }
+.readmore {
+  margin-bottom: 70px; }
+  .readmore a {
+    text-decoration: none; }
 
-.entry-content {
-  margin-bottom: 80px; }
-  .entry-content span {
-    line-height: 1.5;
-    letter-spacing: .5px;
-    font-size: 1rem; }
+.entry-content span {
+  line-height: 1.5;
+  letter-spacing: .5px;
+  font-size: 1rem; }
 
 .cat-links, .tags-links {
   text-transform: uppercase;
@@ -1087,9 +1089,6 @@ img {
   background: transparent;
   padding: 5px 30px;
   margin-top: 30px; }
-
-.content-area {
-  padding-top: 0; }
 
 .status-publish h1 {
   font-size: 2.5rem; }
@@ -1115,3 +1114,20 @@ img {
 .wpcf7-form .wpcf7-submit {
   font-size: .9rem;
   padding: 8px 22.5px; }
+
+.error-404 .page-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .error-404 .page-content a:visited {
+    color: #248a83; }
+    .error-404 .page-content a:visited:hover {
+      color: #2f1339; }
+  .error-404 .page-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0; }
+
+.search-form fieldset {
+  border: 0; }

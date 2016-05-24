@@ -1,0 +1,22 @@
+.error-404 .page-content{
+  display: flex;
+  flex-direction: column;
+  a {
+    &:visited {
+      color: $color__link;
+      &:hover {
+        color: $color__link-visited;
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+.search-form {
+  fieldset {
+    border:0;
+  }
+}

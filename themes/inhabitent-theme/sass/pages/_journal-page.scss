@@ -1,5 +1,3 @@
-
-
 /* Journal page */
 
 .page-content {
@@ -12,9 +10,7 @@
 }
 .content-area {
     border-right: 1px solid #e1e1e1;
-    padding-right: 5%;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 3.25rem 5% 3rem 0;
     width: 73%;
 }
 .entry-header {
@@ -75,12 +71,15 @@ img {
     }
   }
 }
-.readmore a {
-  text-decoration: none;
+.readmore {
+  margin-bottom: 70px;
+  a {
+    text-decoration: none;
+  }
 }
 
+
 .entry-content {
-  margin-bottom:80px;
   span {
     line-height: 1.5;
     letter-spacing: .5px;
