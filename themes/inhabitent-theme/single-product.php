@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package RED_Starter_Theme
+ * @package inhabitent_Theme
  */
 
 get_header(); ?>
@@ -35,7 +35,7 @@ get_header(); ?>
 				</div><!-- .entry-content -->
 
 				<footer class="entry-footer">
-					<?php red_starter_entry_footer(); ?>
+					<?php inhabitent_entry_footer(); ?>
 					<div class="social-buttons">
 						<button type="button" name="button" class="moretag"><i class="fa fa-facebook"></i> Like</button>
 						<button type="button" name="button" class="moretag"><i class="fa fa-twitter"></i> tweet</button>

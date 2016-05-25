@@ -2,7 +2,7 @@
 /**
  * The template for displaying the front page.
  *
- * @package RED_Starter_Theme
+ * @package inhabitent_Theme
  */
 
 get_header(); ?>

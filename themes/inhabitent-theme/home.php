@@ -2,7 +2,7 @@
 /**
  * The journal page
  *
- * @package RED_Starter_Theme
+ * @package inhabitent_Theme
  */
 
 get_header(); ?>
