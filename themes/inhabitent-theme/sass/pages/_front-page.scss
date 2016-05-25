@@ -1,6 +1,13 @@
 
 /* Front page */
 
+.content-area-front {
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: normal;
+  }
+}
 .home .home-hero {
   background: linear-gradient(180deg,rgba(0,0,0,.4)  0,rgba(0,0,0,.4)), url(../../images/home-hero.jpg) no-repeat center;
   background-size: cover, cover;
@@ -13,15 +20,59 @@
   height: 275px;
 }
 
+// Journal Post
+
+.journal-post {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  .journal-picture {
+    background: #e1e1e1;
+  }
+  img {
+    height: 250px;
+    width: auto;
+    max-width: none;
+
+  }
+  li {
+    margin-right: 10px;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 0;
+  }
+  .journal-info {
+    background: white;
+    padding-bottom: 20px;
+    margin: 0.75rem;
+    span {
+      font-size: .8rem;
+    }
+    a {
+      margin-bottom: 3rem;
+    }
+    h3 {
+    font-size: 1.3rem;
+    margin: 0;
+    padding-bottom: 20px;
+    a {
+      color: $color__link;
+      &:hover {
+        color: $color__link-visited;
+      }
+    }
+    }
+
+  }
+  .moretag {
+
+  }
+}
+
 // Latest Adventures
 
 .adventures {
   margin-bottom: 70px;
-  h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: normal;
-  }
   h3 {
     a {
       color: white;

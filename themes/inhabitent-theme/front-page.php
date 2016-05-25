@@ -22,7 +22,34 @@ get_header(); ?>
 
 			<!-- Inhabitent Journal -->
 
-				<!-- Loop goes here -->
+			<h2>Inhabitent Journal</h2>
+			<ul class="journal-post container">
+			<?php
+				$args = array( 'posts_per_page' => 3, 'order'=> 'DESC', 'orderby' => 'date' );
+				$postslist = get_posts( $args );
+				foreach ( $postslist as $post ) :
+				setup_postdata( $post ); ?>
+
+						<li >
+							<div class="journal-picture">
+								<?php the_post_thumbnail( 'large' ); ?>
+							</div>
+
+							<div class="journal-info">
+								<span>
+									<?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+								</span>
+								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+								<a class="moretag" href="<?php the_permalink(); ?>">Read Entry</a>
+							</div>
+
+
+						</li>
+				<?php
+				endforeach;
+				wp_reset_postdata();
+				?>
+				</ul>
 
 			<!-- Latest Adventures -->
 

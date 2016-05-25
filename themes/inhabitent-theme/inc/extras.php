@@ -21,7 +21,7 @@ function inhabitent_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'inhabitent_body_classes' );
 
-// REMOVES EDITOR MENU IN CMS
+// Removes editor in the CMS in WP
 
 function inhabitent_remove_submenus() {
     remove_submenu_page( 'themes.php', 'theme-editor.php' );
@@ -29,7 +29,7 @@ function inhabitent_remove_submenus() {
 }
 add_action( 'admin_init', 'inhabitent_remove_submenus', 102 );
 
-// CUSTOMIZING LOGIN PAGE
+// Customizing Login Page
 
 function inhabitent_custom_login() {
 	echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/customlogin.css" />';
@@ -42,15 +42,22 @@ function inhabitent_url( $url ) {
 }
 add_filter( 'login_headerurl', 'inhabitent_url' );
 
+//////// Font Awesome ////////
 
-//// READ MORE BUTTON in JOUNRAL SINGLE POST ////
+function enqueue_our_required_stylesheets(){
+	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+}
+add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
+
+//// Read More Button in Journal single post ////
+
 function new_excerpt_more($more) {
        global $post;
 	return ' [...] <p class="readmore"> <a class="moretag" href="'. get_permalink($post->ID) . '"> Read More &#x2192; </a></p>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
-//// ABOUT HEADER CSS ////
+//// About Header Hero CSS ////
 
 function about_header_styles_method() {
 
@@ -66,3 +73,15 @@ background-size: cover, cover;
 				wp_add_inline_style( 'inhabitent-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'about_header_styles_method' );
+
+//// Function for reordering and including 16 products on Product Page ////
+
+function inhabitent_filter_product_query( $query ) {
+	if (is_post_type_archive( 'product' ) && !is_admin() && $query->is_main_query() ) {
+		$query->set( 'orderyby', 'title' );
+		$query->set( 'order', 'ASC' );
+		$query->set( 'posts_per_page', 16 );
+	}
+}
+
+add_action ('pre_get_posts', 'inhabitent_filter_product_query');

@@ -880,6 +880,11 @@ a {
     font-size: 0.8rem; }
 
 /* Front page */
+.content-area-front h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: normal; }
+
 .home .home-hero {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../images/home-hero.jpg) no-repeat center;
   background-size: cover, cover;
@@ -894,12 +899,42 @@ a {
 .logo {
   height: 275px; }
 
+.journal-post {
+  list-style: none;
+  padding-left: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .journal-post .journal-picture {
+    background: #e1e1e1; }
+  .journal-post img {
+    height: 250px;
+    width: auto;
+    max-width: none; }
+  .journal-post li {
+    margin-right: 10px;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 0; }
+  .journal-post .journal-info {
+    background: white;
+    padding-bottom: 20px;
+    margin: 0.75rem; }
+    .journal-post .journal-info span {
+      font-size: .8rem; }
+    .journal-post .journal-info a {
+      margin-bottom: 3rem; }
+    .journal-post .journal-info h3 {
+      font-size: 1.3rem;
+      margin: 0;
+      padding-bottom: 20px; }
+      .journal-post .journal-info h3 a {
+        color: #248a83; }
+        .journal-post .journal-info h3 a:hover {
+          color: #2f1339; }
+
 .adventures {
   margin-bottom: 70px; }
-  .adventures h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: normal; }
   .adventures h3 a {
     color: white;
     font-family: "merriweather", serif;

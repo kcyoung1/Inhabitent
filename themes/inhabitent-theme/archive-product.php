@@ -12,11 +12,7 @@ get_header(); ?>
 	<div id="primary" class="product-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php
-			// we add this, to show all posts in our
-			// Glossary sorted alphabetically
-			$posts = query_posts($query_string .
-			'&orderby=title&order=asc&posts_per_page=-1'); ?>
+			
 
 		<?php if ( have_posts() ) : ?>
 
