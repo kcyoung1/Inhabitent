@@ -36,11 +36,13 @@
   .product-grid-item {
     max-width: 23%;
     flex: 0 1 23%;
+    margin-bottom: 20px;
   }
   .product-image {
     overflow: hidden;
     position: relative;
     height: 250px;
+    background: #e1e1e1;
     img {
       max-height: 250px;
       width: auto;
@@ -50,5 +52,15 @@
       left: 50%;
       transform: translate(-50%,-52%);
     }
+  }
+  .product-info {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #e1e1e1;
+    background: white;
+    padding: 5px;
+  }
+  .product-price {
+    padding-left: 2px;
   }
 }

@@ -116,3 +116,21 @@ function new_excerpt_more($more) {
 	return ' [...] <p class="readmore"> <a class="moretag" href="'. get_permalink($post->ID) . '"> Read More &#x2192; </a></p>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+//// DYNAMIC CSS ////
+// 
+// function my_styles_method() {
+// 	wp_enqueue_style(
+// 		'custom-style',
+// 		get_template_directory_uri() . '/style.css'
+// 	);
+// 				$image = CFS()->get( 'featured_about_image' );
+// 				$about_hero = wp_get_attachment_image_url( $image, 'full' );
+// 				$custom_css = "
+// 				.about-header {
+// background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url(" . $about_hero . ") no-repeat center bottom;
+// background-size: cover, cover;
+// }";
+// 				wp_add_inline_style( 'custom-style', $custom_css );
+// }
+// add_action( 'wp_enqueue_scripts', 'my_styles_method' );

@@ -1036,11 +1036,13 @@ a {
   .product-grid .product-grid-item {
     max-width: 23%;
     -ms-flex: 0 1 23%;
-        flex: 0 1 23%; }
+        flex: 0 1 23%;
+    margin-bottom: 20px; }
   .product-grid .product-image {
     overflow: hidden;
     position: relative;
-    height: 250px; }
+    height: 250px;
+    background: #e1e1e1; }
     .product-grid .product-image img {
       max-height: 250px;
       width: auto;
@@ -1049,6 +1051,16 @@ a {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -52%); }
+  .product-grid .product-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    border: 1px solid #e1e1e1;
+    background: white;
+    padding: 5px; }
+  .product-grid .product-price {
+    padding-left: 2px; }
 
 /* Journal page */
 .page-content {

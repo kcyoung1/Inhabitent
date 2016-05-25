@@ -15,7 +15,7 @@
 			<div class="product-info">
 				<?php the_title( sprintf( '<h2 class="product-title"></h2>' )); ?>
 
-				<div class="product-price">
+				.......<div class="product-price">
 					<?php echo CFS()->get( 'price' ); ?>
 				</div><!-- .product-price -->
 			</div> <!-- .product-info -->
