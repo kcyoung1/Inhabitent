@@ -883,7 +883,8 @@ a {
 .content-area-front h2 {
   text-align: center;
   font-size: 2.5rem;
-  font-weight: normal; }
+  font-weight: normal;
+  padding: 30px 0; }
 
 .home .home-hero {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../images/home-hero.jpg) no-repeat center;
@@ -1014,19 +1015,19 @@ a {
     .readtag:visited:hover {
       color: white; }
 
-.more-adventures {
+.button {
   padding: 12.5px 25px;
   font-family: Novovento Sans Web, sans-serif;
   text-transform: uppercase;
   color: white;
   font-size: 1.1rem;
   background-color: #248a83; }
-  .more-adventures:hover {
+  .button:hover {
     background-color: #19625d;
     color: white; }
-  .more-adventures:visited {
+  .button:visited {
     color: white; }
-    .more-adventures:visited:hover {
+    .button:visited:hover {
       color: white; }
 
 .product-area {
@@ -1067,7 +1068,8 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  padding-top: 30px; }
   .product-grid .product-grid-item {
     max-width: 23%;
     -ms-flex: 0 1 23%;
@@ -1105,7 +1107,7 @@ a {
   margin-right: auto;
   width: 1120px;
   margin-top: 0;
-  padding-top: 60px; }
+  padding-top: 50px; }
 
 .content-area {
   border-right: 1px solid #e1e1e1;

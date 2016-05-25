@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The template for displaying product type pages.
  *
- * @package RED_Starter_Theme
+ * @package inhabitent_Theme
  */
 
 get_header(); ?>
@@ -12,23 +12,13 @@ get_header(); ?>
 	<div id="primary" class="product-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php
-			// we add this, to show all posts in our
-			// Glossary sorted alphabetically
-			$posts = query_posts($query_string .
-			'&orderby=title&order=asc&posts_per_page=-1'); ?>
+
 
 		<?php if ( have_posts() ) : ?>
 
 			<header class="product-header">
-				<h1>Shop Stuff</h1>
-				<ul class="product-list">
-					<li class="uppercase">
-						<a href="">Do</a></li>
-					<li class="uppercase"><a href="">Eat</a></li>
-					<li class="uppercase"><a href="">Sleep</a></li>
-					<li class="uppercase"><a href="">Wear</a></li>
-				</ul>
+		
+
 			</header><!-- .page-header -->
 			<div class="product-grid">
 					<?php /* Start the Loop */ ?>

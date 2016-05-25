@@ -18,7 +18,19 @@ get_header(); ?>
 
 			<!-- Shop Stuff -->
 
-				<!-- Loop goes here -->
+			<?php $terms = get_terms(
+				array(
+				'taxonomy' => 'product_type',
+				'hide_empty' => false,) );
+
+				foreach ( $terms as $product_type) : ?>
+				<img src="<?php echo get_template_directory_uri(); ?>/images/icons/<?php echo $product_type->slug; ?>.svg" alt="product-type" />
+
+				<p class="description">
+					<?php echo $product_type->description; ?>
+				</p>
+
+			<?php Endforeach; ?>s
 
 			<!-- Inhabitent Journal -->
 
@@ -91,7 +103,7 @@ get_header(); ?>
 						</li>
 					</ul>
 					<p class="clearfix">
-						<a href="#" class="more-adventures">More Adventures</a>
+						<a href="#" class="button">More Adventures</a>
 					</p>
 				</section>
 
