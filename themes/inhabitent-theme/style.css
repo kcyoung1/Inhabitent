@@ -426,7 +426,6 @@ object {
   background-color: transparent;
   border-bottom: 0;
   position: fixed;
-  text-shadow: 1px 1px 2px #323232;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
@@ -434,16 +433,17 @@ object {
   padding: 0 0 0 150px;
   z-index: 999;
   width: 100%;
-  background: rgba(150, 147, 148, 0.63); }
+  background: rgba(255, 255, 255, 0.74);
+  border-bottom: 1px solid #e1e1e1; }
   .site-header a {
-    color: white;
+    color: #248a83;
     padding: 4px; }
     .site-header a:hover {
-      color: #f0e4d1; }
+      color: #2f1339; }
     .site-header a:visited {
-      color: white; }
+      color: #248a83; }
       .site-header a:visited:hover {
-        color: #f0e4d1; }
+        color: #2f1339; }
 
 .header-bar {
   display: -ms-flexbox;
@@ -454,7 +454,7 @@ object {
   margin-bottom: 20px; }
 
 .site-title {
-  background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
+  background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
   background-size: 50px;
   height: 50px;
   width: 50px;
@@ -464,11 +464,6 @@ object {
   position: absolute;
   top: 10px;
   left: 150px; }
-
-.main-navigation a {
-  color: white; }
-  .main-navigation a:visited {
-    color: white; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -998,6 +993,53 @@ a {
     color: white; }
     .more-adventures:visited:hover {
       color: white; }
+
+.product-area {
+  width: 1120px;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px; }
+
+.product-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  border-bottom: 1px dashed #e1e1e1;
+  margin-bottom: 20px; }
+  .product-header h1 {
+    font-size: 2.5rem; }
+  .product-header .product-list {
+    list-style: none;
+    text-transform: uppercase;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    margin-left: 0;
+    font-family: Novovento Sans Web, sans-serif;
+    font-size: 1.2rem; }
+    .product-header .product-list li {
+      padding: 0 25px; }
+
+.product-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .product-grid .product-grid-item {
+    max-width: 23%;
+    -ms-flex: 0 1 23%;
+        flex: 0 1 23%; }
+  .product-grid .product-image {
+    max-height: 250px;
+    width: auto; }
 
 /* Journal page */
 .page-content {
