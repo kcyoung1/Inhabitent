@@ -1038,8 +1038,17 @@ a {
     -ms-flex: 0 1 23%;
         flex: 0 1 23%; }
   .product-grid .product-image {
-    max-height: 250px;
-    width: auto; }
+    overflow: hidden;
+    position: relative;
+    height: 250px; }
+    .product-grid .product-image img {
+      max-height: 250px;
+      width: auto;
+      max-width: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -52%); }
 
 /* Journal page */
 .page-content {

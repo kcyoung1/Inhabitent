@@ -9,11 +9,11 @@
 		<div class="product-grid-item">
 
 				<div class="product-image">
-						<?php the_post_thumbnail( 'large' ); ?>
+						<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark"><?php the_post_thumbnail( 'large' ); ?></a>
 				</div><!-- .product-image -->
 
 			<div class="product-info">
-				<?php the_title( sprintf( '<h2 class="product-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+				<?php the_title( sprintf( '<h2 class="product-title"></h2>' )); ?>
 
 				<div class="product-price">
 					<?php echo CFS()->get( 'price' ); ?>

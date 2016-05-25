@@ -32,12 +32,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
   .product-grid-item {
     max-width: 23%;
     flex: 0 1 23%;
   }
   .product-image {
-    max-height: 250px;
-    width: auto;
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    img {
+      max-height: 250px;
+      width: auto;
+      max-width: none;
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-52%);
+    }
   }
 }
