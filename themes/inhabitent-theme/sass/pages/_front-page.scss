@@ -21,6 +21,25 @@
   height: 275px;
 }
 
+// Shop Stuff
+
+.shop-stuff {
+  display: flex;
+  justify-content: center;
+}
+.product-block {
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  width: 250px;
+  text-align: center;
+  margin: 10px;
+  padding: 20px 0;
+  img {
+    height: 70px;
+    width: auto;
+  }
+}
+
 // Journal Post
 
 .journal-post {
@@ -60,13 +79,9 @@
       color: $color__link;
       &:hover {
         color: $color__link-visited;
+        }
       }
     }
-    }
-
-  }
-  .moretag {
-
   }
 }
 

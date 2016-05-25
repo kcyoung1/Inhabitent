@@ -13,13 +13,18 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 
-
 		<?php if ( have_posts() ) : ?>
 
 			<header class="product-header">
-		
 
+				<div class="product-tax-page">
+					<h1><?php single_term_title(); ?></h1>
+					<p>
+						<?php echo term_description(); ?>
+					</p>
+				</div>
 			</header><!-- .page-header -->
+
 			<div class="product-grid">
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>

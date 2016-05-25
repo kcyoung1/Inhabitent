@@ -12,19 +12,26 @@ get_header(); ?>
 	<div id="primary" class="product-area">
 		<main id="main" class="site-main" role="main">
 
-			
+
 
 		<?php if ( have_posts() ) : ?>
 
 			<header class="product-header">
 				<h1>Shop Stuff</h1>
-				<ul class="product-list">
-					<li class="uppercase">
-						<a href="">Do</a></li>
-					<li class="uppercase"><a href="">Eat</a></li>
-					<li class="uppercase"><a href="">Sleep</a></li>
-					<li class="uppercase"><a href="">Wear</a></li>
+				<ul class="product-links">
+					<?php $terms = get_terms(
+						array(
+						'taxonomy' => 'product_type',
+						'hide_empty' => false,) );
+
+						foreach ( $terms as $product_type) : ?>
+							<li>
+								<a href="<?php home_url(); ?>/product-type/<?php echo $product_type->slug; ?>"><?php echo $product_type->name; ?></a>
+							</li>
+					<?php Endforeach; ?>
 				</ul>
+
+
 			</header><!-- .page-header -->
 			<div class="product-grid">
 					<?php /* Start the Loop */ ?>

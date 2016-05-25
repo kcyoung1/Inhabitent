@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying posts.
+ * Template part for displaying product posts.
  *
  * @package inhabitent_Theme
  */
@@ -9,7 +9,7 @@
 		<div class="product-grid-item">
 
 				<div class="product-image">
-						<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark"><?php the_post_thumbnail( 'large' ); ?></a>
+						<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail( 'large' ); ?></a>
 				</div><!-- .product-image -->
 
 			<div class="product-info">

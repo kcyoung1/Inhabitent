@@ -17,20 +17,27 @@ get_header(); ?>
 				</section>
 
 			<!-- Shop Stuff -->
+			<h2>Shop Stuff</h2>
+				<section class="shop-stuff">
+					<?php $terms = get_terms(
+						array(
+						'taxonomy' => 'product_type',
+						'hide_empty' => false,) );
 
-			<?php $terms = get_terms(
-				array(
-				'taxonomy' => 'product_type',
-				'hide_empty' => false,) );
+						foreach ( $terms as $product_type) : ?>
+						<div class="product-block">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/icons/<?php echo $product_type->slug; ?>.svg" alt="product-type" />
 
-				foreach ( $terms as $product_type) : ?>
-				<img src="<?php echo get_template_directory_uri(); ?>/images/icons/<?php echo $product_type->slug; ?>.svg" alt="product-type" />
+							<p class="description">
+								<?php echo $product_type->description; ?>
+							</p>
+							<a href="<?php the_permalink(); ?>product-type/<?php echo $product_type->slug; ?>" class="button"><?php echo $product_type->name; ?> Stuff</a>
 
-				<p class="description">
-					<?php echo $product_type->description; ?>
-				</p>
+					</div>
+					<?php Endforeach; ?>
 
-			<?php Endforeach; ?>s
+				</section>
+
 
 			<!-- Inhabitent Journal -->
 

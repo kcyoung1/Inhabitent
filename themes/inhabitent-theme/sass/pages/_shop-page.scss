@@ -1,3 +1,23 @@
+// Header of Shop Page
+.product-links {
+  list-style: none;
+  display: flex;
+  margin-left: 0;
+  padding-left:0;
+  li {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-family: $font__pre;
+    font-weight: normal;
+    text-transform: uppercase;
+    a {
+      color: $color__link;
+    }
+  }
+}
+
+//Product Grid Area
+
 .product-area {
   width: 1120px;
   padding-top: 20px;
@@ -63,4 +83,10 @@
   .product-price {
     padding-left: 2px;
   }
+}
+
+// Product Category Page
+
+.product-tax-page {
+  text-align: center;
 }
