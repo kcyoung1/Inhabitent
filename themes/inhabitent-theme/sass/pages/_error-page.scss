@@ -1,6 +1,10 @@
-.error-404 .page-content{
+.error-whole-page {
+  display: flex;
+}
+.error-404 .error-content{
   display: flex;
   flex-direction: column;
+  width: 73%;
   a {
     &:visited {
       color: $color__link;

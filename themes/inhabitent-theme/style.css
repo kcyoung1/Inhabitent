@@ -1287,16 +1287,21 @@ img {
   font-size: .9rem;
   padding: 8px 22.5px; }
 
-.error-404 .page-content {
+.error-whole-page {
+  display: -ms-flexbox;
+  display: flex; }
+
+.error-404 .error-content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column; }
-  .error-404 .page-content a:visited {
+      flex-direction: column;
+  width: 73%; }
+  .error-404 .error-content a:visited {
     color: #248a83; }
-    .error-404 .page-content a:visited:hover {
+    .error-404 .error-content a:visited:hover {
       color: #2f1339; }
-  .error-404 .page-content ul {
+  .error-404 .error-content ul {
     list-style: none;
     padding-left: 0;
     margin-left: 0; }
