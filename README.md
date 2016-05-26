@@ -1,4 +1,4 @@
-<h1>Project 4 - Inhabitent (CURRENT PROJECT - STILL IN PROGRESS)</h1>
+<h1>Project 4 - Inhabitent (Current project - still in progress)</h1>
 <h2>Summary</h2>
 <p>For our fourth project, we created a custom theme for an ecommerce website using HTML, CSS/SCSS, PHP, and JS. </p>
 
