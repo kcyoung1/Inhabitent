@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Adventures page
+ * Template Name: Adventure page
  *
  * @package inhabitent_Theme
  */
@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="about-area">
 		<main id="main" class="site-main" role="main">
 
-			<section class="about-header">
+			<section class="adventure-header">
 				<h1>About</h1>
 			</section>
 

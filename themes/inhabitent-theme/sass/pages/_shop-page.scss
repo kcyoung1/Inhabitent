@@ -90,3 +90,28 @@
 .product-tax-page {
   text-align: center;
 }
+
+// Single Product Page
+.single-product-content {
+  .type-product {
+    display: flex;
+  }
+  .entry-header {
+    padding-top: 70px;
+    width: 48%;
+  }
+  .entry-content {
+    width: 48%;
+    padding-left: 50px;
+    .entry-title {
+      color: #d99054;
+    }
+    .price {
+      font-size: 1.5rem;
+      font-family: $font__pre;
+    }
+  }
+  .moretag {
+    margin-top: 0;
+  }
+}

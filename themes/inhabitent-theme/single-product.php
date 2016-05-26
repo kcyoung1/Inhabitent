@@ -18,13 +18,13 @@ get_header(); ?>
 					<?php if ( has_post_thumbnail() ) : ?>
 						<?php the_post_thumbnail( 'large' ); ?>
 					<?php endif; ?>
-
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
 				</header><!-- .entry-header -->
 
 				<div class="entry-content">
-					<?php echo CFS()->get( 'price' ); ?>
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					<div class="price">
+						<?php echo CFS()->get( 'price' ); ?>
+					</div>
 					<?php the_content(); ?>
 					<?php
 						wp_link_pages( array(
@@ -32,16 +32,17 @@ get_header(); ?>
 							'after'  => '</div>',
 						) );
 					?>
+					<footer class="entry-footer">
+						<?php inhabitent_entry_footer(); ?>
+						<div class="social-buttons">
+							<button type="button" name="button" class="moretag"><i class="fa fa-facebook"></i> Like</button>
+							<button type="button" name="button" class="moretag"><i class="fa fa-twitter"></i> tweet</button>
+							<button type="button" name="button" class="moretag"><i class="fa fa-pinterest"></i> Pin</button>
+						</div>
+					</footer><!-- .entry-footer -->
 				</div><!-- .entry-content -->
 
-				<footer class="entry-footer">
-					<?php inhabitent_entry_footer(); ?>
-					<div class="social-buttons">
-						<button type="button" name="button" class="moretag"><i class="fa fa-facebook"></i> Like</button>
-						<button type="button" name="button" class="moretag"><i class="fa fa-twitter"></i> tweet</button>
-						<button type="button" name="button" class="moretag"><i class="fa fa-pinterest"></i> Pin</button>
-					</div>
-				</footer><!-- .entry-footer -->
+
 			</article><!-- #post-## -->
 
 		<?php endwhile; // End of the loop. ?>

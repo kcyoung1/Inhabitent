@@ -34,6 +34,9 @@
   text-align: center;
   margin: 10px;
   padding: 20px 0;
+  &:hover {
+    border-color:#d99054;
+  }
   img {
     height: 70px;
     width: auto;

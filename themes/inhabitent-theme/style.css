@@ -925,6 +925,8 @@ a {
   text-align: center;
   margin: 10px;
   padding: 20px 0; }
+  .product-block:hover {
+    border-color: #d99054; }
   .product-block img {
     height: 70px;
     width: auto; }
@@ -1146,6 +1148,26 @@ a {
 .product-tax-page {
   text-align: center; }
 
+.single-product-content .type-product {
+  display: -ms-flexbox;
+  display: flex; }
+
+.single-product-content .entry-header {
+  padding-top: 70px;
+  width: 48%; }
+
+.single-product-content .entry-content {
+  width: 48%;
+  padding-left: 50px; }
+  .single-product-content .entry-content .entry-title {
+    color: #d99054; }
+  .single-product-content .entry-content .price {
+    font-size: 1.5rem;
+    font-family: "Novovento Sans Web", sans-serif; }
+
+.single-product-content .moretag {
+  margin-top: 0; }
+
 /* Journal page */
 .page-content {
   display: -ms-flexbox;
@@ -1217,7 +1239,7 @@ img {
     text-decoration: none; }
 
 .entry-content span {
-  line-height: 1.5;
+  line-height: 1.75;
   letter-spacing: .5px;
   font-size: 1rem; }
 
