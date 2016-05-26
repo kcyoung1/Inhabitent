@@ -1,0 +1,17 @@
+.single-adventure {
+  .adventure-header {
+    div {
+      text-align: left;
+      max-width: 800px;
+    }
+    span {
+      text-transform: uppercase;
+      font-family: $font__pre;
+    }
+  }
+  .entry-content {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

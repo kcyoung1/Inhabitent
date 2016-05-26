@@ -15,6 +15,8 @@
 .widget_search .search-submit {
 	display: none;
 }
+
+/* Widget area */
 .widget-area {
 	width: 27%;
 	padding-left: 5%;
@@ -35,6 +37,7 @@
 		}
 	}
 }
+/* Contact Info */
 .textwidget {
 	p {
 		display: flex;
@@ -45,6 +48,15 @@
 		width: 20px;
 	}
 }
+
+/* Business hours */
+.inhabitent-hours-class {
+	p {
+		font-size: .9rem;
+	}
+}
+
+/* Archive */
 .widget_archive {
 	ul {
 		padding-left: 0;

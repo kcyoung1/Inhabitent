@@ -777,6 +777,7 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+/* Widget area */
 .widget-area {
   width: 27%;
   padding-left: 5%;
@@ -792,6 +793,7 @@ a {
       .widget-area a:visited:hover {
         color: #19625d; }
 
+/* Contact Info */
 .textwidget p {
   display: -ms-flexbox;
   display: flex; }
@@ -801,6 +803,11 @@ a {
   line-height: 1.8rem;
   width: 20px; }
 
+/* Business hours */
+.inhabitent-hours-class p {
+  font-size: .9rem; }
+
+/* Archive */
 .widget_archive ul {
   padding-left: 0;
   margin-left: 0;
@@ -875,8 +882,6 @@ a {
 .business-hours {
   margin-left: 50px;
   line-height: 1.5; }
-  .business-hours .days {
-    font-weight: bold; }
 
 .footer-logo {
   max-width: 50%;
@@ -890,6 +895,9 @@ a {
   margin-top: 30px; }
   .site-info .year {
     font-size: 0.8rem; }
+
+.days {
+  font-weight: bold; }
 
 /* Front page */
 .content-area-front h2 {
@@ -1199,10 +1207,6 @@ a {
   font-size: 2rem;
   line-height: 1.25; }
 
-img {
-  height: auto;
-  width: 100%; }
-
 .entry-meta, .blog .entry-meta, .single-post .entry-meta {
   background-color: #248a83;
   color: white;
@@ -1330,3 +1334,16 @@ img {
 
 .search-form fieldset {
   border: 0; }
+
+.single-adventure .adventure-header div {
+  text-align: left;
+  max-width: 800px; }
+
+.single-adventure .adventure-header span {
+  text-transform: uppercase;
+  font-family: "Novovento Sans Web", sans-serif; }
+
+.single-adventure .entry-content {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; }

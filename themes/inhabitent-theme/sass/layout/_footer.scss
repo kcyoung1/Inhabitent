@@ -34,9 +34,6 @@
 .business-hours {
   margin-left: 50px;
   line-height: 1.5;
-  .days {
-    font-weight: bold;
-  }
 }
 .footer-logo {
   max-width: 50%;
@@ -51,4 +48,7 @@
   .year {
     font-size: 0.8rem;
   }
+}
+.days {
+  font-weight: bold;
 }
