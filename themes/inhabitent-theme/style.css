@@ -433,9 +433,29 @@ object {
 .gallery-caption {
   display: block; }
 
-.site-header {
+.home .site-header, .page-template-about .site-header, .single-adventure .site-header {
   height: 50px;
   background-color: transparent;
+  border-bottom: 0;
+  text-shadow: 1px 1px 2px #323232;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  padding: 0 0 0 150px; }
+  .home .site-header a, .page-template-about .site-header a, .single-adventure .site-header a {
+    color: white;
+    padding: 4px; }
+    .home .site-header a:hover, .page-template-about .site-header a:hover, .single-adventure .site-header a:hover {
+      color: white; }
+    .home .site-header a:visited, .page-template-about .site-header a:visited, .single-adventure .site-header a:visited {
+      color: white; }
+      .home .site-header a:visited:hover, .page-template-about .site-header a:visited:hover, .single-adventure .site-header a:visited:hover {
+        color: white; }
+
+.site-header {
+  height: 50px;
   border-bottom: 0;
   position: fixed;
   display: -ms-flexbox;
@@ -457,13 +477,40 @@ object {
       .site-header a:visited:hover {
         color: #2f1339; }
 
-.header-bar {
+.site-header-fixed {
+  height: 50px;
+  border-bottom: 0;
+  position: fixed;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  padding: 10px 0 0 20px;
-  margin-bottom: 20px; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 0 0 150px;
+  z-index: 999;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.74);
+  border-bottom: 1px solid #e1e1e1; }
+  .site-header-fixed a {
+    color: #248a83;
+    padding: 4px; }
+    .site-header-fixed a:hover {
+      color: #2f1339; }
+    .site-header-fixed a:visited {
+      color: #248a83; }
+      .site-header-fixed a:visited:hover {
+        color: #2f1339; }
+
+.home .site-title, .page-template-about .site-title, .single-adventure .site-title {
+  background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
+  background-size: 50px;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  text-indent: 100%;
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  left: 150px; }
 
 .site-title {
   background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
@@ -476,6 +523,26 @@ object {
   position: absolute;
   top: 10px;
   left: 150px; }
+
+.site-title-fixed {
+  background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+  background-size: 50px;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  text-indent: 100%;
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  left: 150px; }
+
+.header-bar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 10px 0 0 20px;
+  margin-bottom: 20px; }
 
 /*--------------------------------------------------------------
 # Forms

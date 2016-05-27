@@ -1,17 +1,35 @@
-$window = $(window);
-$window.scroll(function() {
-  $scroll_position = $window.scrollTop();
-    if ($scroll_position > 300) { // if body is scrolled down by 300 pixels
-        $('.your-header').addClass('sticky');
+/**
+ * sticky-header.js
+ *
+ * Helps with accessibility for keyboard only users.
+ *
+ * Learn more: https://github.com/Automattic/RED Starter Theme/pull/136
+ */
 
-        // to get rid of jerk
-        header_height = $('.your-header').innerHeight();
-        $('body').css('padding-top' , header_height);
-    } else {
-        $('body').css('padding-top' , '0');
-        $('.your-header').removeClass('sticky');
-    }
+ $(document).ready(function($){
+   $window = $(window);
+   $window.scroll(function() {
+     $scroll_position = $window.scrollTop();
+       if ($scroll_position > 750 && $('body').hasClass('.home, .page-template-about, .single-adventure')) { // if body is scrolled down by 750 pixels
+           $('#masthead').addClass('.site-header-fixed');
+           $('#masthead').addClass('.site-title-fixed');
+           $('#masthead').removeClass('.site-header');
+           $('#masthead').removeClass('.site-title');
+
+
+           // to get rid of jerk
+           header_height = $('.your-header').innerHeight();
+           $('body').css('padding-top' , header_height);
+       } else if ($scroll_position < 750 && $('body').hasClass('.home, .page-template-about, .single-adventure')){
+         $('#masthead').removeClass('.site-header-fixed');
+         $('#masthead').removeClass('.site-title-fixed');
+         $('#masthead').addClass('.site-header');
+         $('#masthead').addClass('.site-title');
+       }
+    });
  });
+
+
 
 // CSS FOR sticky
 
