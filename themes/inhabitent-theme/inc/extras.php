@@ -85,3 +85,12 @@ function inhabitent_filter_product_query( $query ) {
 }
 
 add_action ('pre_get_posts', 'inhabitent_filter_product_query');
+
+
+// PHP FUNCTION FOR sticky
+
+function inhabitent_sticky_script() {
+    wp_enqueue_script('sticky-header', get_template_directory_uri() . '/js/sticky-header.js', array('jquery') );
+}
+
+add_action( 'wp_enqueue_scripts', 'inhabitent_sticky_script' );

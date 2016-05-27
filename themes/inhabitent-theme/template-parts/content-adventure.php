@@ -8,7 +8,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="adventure-header">
+	<section class="adventure-header">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'full' ); ?>
 		<?php endif; ?>
@@ -18,7 +18,7 @@
 		<span><?php inhabitent_posted_by(); ?></span>
 	</div>
 
-	</header><!-- .entry-header -->
+</section><!-- .entry-header -->
 
 	<div class="entry-content container">
 		<?php the_content(); ?>

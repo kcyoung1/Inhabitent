@@ -499,6 +499,17 @@ object {
       color: #248a83; }
       .site-header-fixed a:visited:hover {
         color: #2f1339; }
+  .site-header-fixed .site-title-fixed {
+    background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+    background-size: 50px;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    text-indent: 100%;
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    left: 150px; }
 
 .home .site-title, .page-template-about .site-title, .single-adventure .site-title {
   background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
@@ -513,18 +524,6 @@ object {
   left: 150px; }
 
 .site-title {
-  background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
-  background-size: 50px;
-  height: 50px;
-  width: 50px;
-  overflow: hidden;
-  text-indent: 100%;
-  margin: 0;
-  position: absolute;
-  top: 10px;
-  left: 150px; }
-
-.site-title-fixed {
   background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
   background-size: 50px;
   height: 50px;
@@ -1418,27 +1417,27 @@ a {
 .search-form fieldset {
   border: 0; }
 
-.single-adventure .adventure-header .entry-title {
+.adventure-single .adventure-header .entry-title {
   margin-bottom: 0; }
 
-.single-adventure .adventure-header h1 {
+.adventure-single .adventure-header h1 {
   font-size: 2.3rem; }
 
-.single-adventure .adventure-header div {
+.adventure-single .adventure-header div {
   text-align: left;
   max-width: 800px; }
 
-.single-adventure .adventure-header span {
+.adventure-single .adventure-header span {
   text-transform: uppercase;
   font-family: "Novovento Sans Web", sans-serif;
   font-size: 1.1rem; }
 
-.single-adventure .entry-content {
+.adventure-single .entry-content {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto; }
 
-.single-adventure .social-buttons button {
+.adventure-single .social-buttons button {
   margin-top: 0;
   margin-bottom: 50px; }
 

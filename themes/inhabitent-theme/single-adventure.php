@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-<div class="single-adventure">
+<div class="adventure-single">
 
 	<div id="primary" class="adventure-area">
 		<main id="main" class="site-main" role="main">
