@@ -237,7 +237,7 @@ textarea {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: "Novovento Sans Web", sans-serif;
+  font-family: "novocento", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px; }
 
@@ -256,7 +256,7 @@ address {
 
 pre {
   background: #eee;
-  font-family: "Novovento Sans Web", sans-serif;
+  font-family: "novocento", sans-serif;
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
@@ -303,13 +303,13 @@ big {
   font-style: normal; }
 
 @font-face {
-  font-family: 'Novovento Sans Web';
+  font-family: 'novocento';
   src: url("../../fonts/novocento/novocentosanswide-normal-webfont.woff2") format("woff2"), url("../../fonts/novocento/novocentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/novocento/novocentosanswide-normal-webfont.svg") format("svg"), url("../../fonts/novocento/novocentosanswide-normal-webfont.ttf") format("ttf") url("../../fonts/novocento/novocentosanswide-normal-webfont.eot") format("eot");
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Novovento Sans Web';
+  font-family: 'novocento';
   src: url("../../fonts/novocento/novocentosanswide-demibold-webfont.woff2") format("woff2"), url("../../fonts/novocento/novocentosanswide-demibold-webfont.woff") format("woff"), url("../../fonts/novocento/novocentosanswide-demibold-webfont.svg") format("svg"), url("../../fonts/novocento/novocentosanswide-demibold-webfont.ttf") format("ttf") url("../../fonts/novocento/novocentosanswide-demibold-webfont.eot") format("eot");
   font-weight: normal;
   font-style: normal; }
@@ -444,15 +444,15 @@ object {
       justify-content: space-around;
   position: absolute;
   padding: 0 0 0 150px; }
-  .home .site-header a, .page-template-about .site-header a, .single-adventure .site-header a {
+  .home .site-header a, .home .site-header i, .page-template-about .site-header a, .page-template-about .site-header i, .single-adventure .site-header a, .single-adventure .site-header i {
     color: white;
     padding: 4px; }
-    .home .site-header a:hover, .page-template-about .site-header a:hover, .single-adventure .site-header a:hover {
+    .home .site-header a:hover, .home .site-header i:hover, .page-template-about .site-header a:hover, .page-template-about .site-header i:hover, .single-adventure .site-header a:hover, .single-adventure .site-header i:hover {
+      color: #f0e4d1; }
+    .home .site-header a:visited, .home .site-header i:visited, .page-template-about .site-header a:visited, .page-template-about .site-header i:visited, .single-adventure .site-header a:visited, .single-adventure .site-header i:visited {
       color: white; }
-    .home .site-header a:visited, .page-template-about .site-header a:visited, .single-adventure .site-header a:visited {
-      color: white; }
-      .home .site-header a:visited:hover, .page-template-about .site-header a:visited:hover, .single-adventure .site-header a:visited:hover {
-        color: white; }
+      .home .site-header a:visited:hover, .home .site-header i:visited:hover, .page-template-about .site-header a:visited:hover, .page-template-about .site-header i:visited:hover, .single-adventure .site-header a:visited:hover, .single-adventure .site-header i:visited:hover {
+        color: #f0e4d1; }
 
 .site-header {
   height: 50px;
@@ -467,15 +467,30 @@ object {
   width: 100%;
   background: rgba(255, 255, 255, 0.74);
   border-bottom: 1px solid #e1e1e1; }
-  .site-header a {
+  .site-header a, .site-header i {
     color: #248a83;
     padding: 4px; }
-    .site-header a:hover {
+    .site-header a:hover, .site-header i:hover {
       color: #2f1339; }
-    .site-header a:visited {
+    .site-header a:visited, .site-header i:visited {
       color: #248a83; }
-      .site-header a:visited:hover {
+      .site-header a:visited:hover, .site-header i:visited:hover {
         color: #2f1339; }
+  .site-header .fa-search {
+    line-height: 1.5;
+    margin-right: 5px; }
+  .site-header input[type=search] {
+    background: transparent;
+    color: #f0e4d1;
+    text-transform: uppercase;
+    font-family: 'novocento', sans-serif;
+    border: 0;
+    outline: none;
+    font-size: .9rem;
+    width: 200px; }
+  .site-header fieldset {
+    margin: 0;
+    padding: 0; }
 
 .site-header-fixed {
   height: 50px;
@@ -490,15 +505,18 @@ object {
   width: 100%;
   background: rgba(255, 255, 255, 0.74);
   border-bottom: 1px solid #e1e1e1; }
-  .site-header-fixed a {
+  .site-header-fixed a, .site-header-fixed i {
     color: #248a83;
     padding: 4px; }
-    .site-header-fixed a:hover {
+    .site-header-fixed a:hover, .site-header-fixed i:hover {
       color: #2f1339; }
-    .site-header-fixed a:visited {
+    .site-header-fixed a:visited, .site-header-fixed i:visited {
       color: #248a83; }
-      .site-header-fixed a:visited:hover {
+      .site-header-fixed a:visited:hover, .site-header-fixed i:visited:hover {
         color: #2f1339; }
+  .site-header-fixed .fa-search {
+    line-height: 1.5;
+    margin-right: 5px; }
   .site-header-fixed .site-title-fixed {
     background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
     background-size: 50px;
@@ -510,6 +528,18 @@ object {
     position: absolute;
     top: 10px;
     left: 150px; }
+  .site-header-fixed input[type=search] {
+    background: transparent;
+    color: #f0e4d1;
+    text-transform: uppercase;
+    font-family: 'novocento', sans-serif;
+    border: 0;
+    outline: none;
+    font-size: .9rem;
+    width: 200px; }
+  .site-header-fixed fieldset {
+    margin: 0;
+    padding: 0; }
 
 .home .site-title, .page-template-about .site-title, .single-adventure .site-title {
   background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
@@ -648,12 +678,12 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
 
 label {
   text-transform: uppercase;
-  font-family: "Novovento Sans Web", sans-serif;
+  font-family: "novocento", sans-serif;
   font-size: 1.1rem; }
 
 input[type=submit] {
   padding: 12.5px 25px;
-  font-family: "Novovento Sans Web", sans-serif;
+  font-family: "novocento", sans-serif;
   text-transform: uppercase;
   color: white;
   font-size: 0.9rem;
@@ -954,7 +984,7 @@ a {
   margin-left: 250px; }
 
 .site-info {
-  font-family: "Novovento Sans Web", sans-serif;
+  font-family: "novocento", sans-serif;
   text-transform: uppercase;
   text-align: center;
   color: white;
@@ -1120,7 +1150,7 @@ a {
 .readtag {
   border: 1px solid white;
   padding: 12.5px 25px;
-  font-family: "Novovento Sans Web", sans-serif;
+  font-family: "novocento", sans-serif;
   text-transform: uppercase;
   color: white;
   font-size: 0.9rem; }
@@ -1138,7 +1168,7 @@ a {
 
 .button {
   padding: 12.5px 25px;
-  font-family: "Novovento Sans Web", sans-serif;
+  font-family: "novocento", sans-serif;
   text-transform: uppercase;
   color: white;
   font-size: 1.1rem;
@@ -1160,7 +1190,7 @@ a {
   .product-links li {
     padding: 10px 30px;
     font-size: 1.2rem;
-    font-family: "Novovento Sans Web", sans-serif;
+    font-family: "novocento", sans-serif;
     font-weight: normal;
     text-transform: uppercase; }
     .product-links li a {
@@ -1193,7 +1223,7 @@ a {
     display: flex;
     padding-left: 0;
     margin-left: 0;
-    font-family: "Novovento Sans Web", sans-serif;
+    font-family: "novocento", sans-serif;
     font-size: 1.2rem; }
     .product-header .product-list li {
       padding: 0 25px; }
@@ -1253,7 +1283,7 @@ a {
     color: #d99054; }
   .single-product-content .entry-content .price {
     font-size: 1.5rem;
-    font-family: "Novovento Sans Web", sans-serif; }
+    font-family: "novocento", sans-serif; }
 
 .single-product-content .moretag {
   margin-top: 0; }
@@ -1295,7 +1325,7 @@ a {
   position: absolute;
   right: 0;
   bottom: 0;
-  font-family: "Novovento Sans Web", sans-serif;
+  font-family: "novocento", sans-serif;
   text-transform: uppercase;
   padding: 2.5px 20px;
   font-size: 0.9rem; }
@@ -1306,7 +1336,7 @@ a {
 .moretag {
   border: 1px solid black;
   padding: 12.5px 25px;
-  font-family: "Novovento Sans Web", sans-serif;
+  font-family: "novocento", sans-serif;
   text-transform: uppercase;
   color: black;
   font-size: 0.9rem; }
@@ -1331,7 +1361,7 @@ a {
 
 .cat-links, .tags-links {
   text-transform: uppercase;
-  font-family: "Novovento Sans Web", sans-serif; }
+  font-family: "novocento", sans-serif; }
   .cat-links a, .tags-links a {
     color: #248a83; }
     .cat-links a:hover, .tags-links a:hover {
@@ -1379,7 +1409,7 @@ a {
 
 .wpcf7-form label {
   text-transform: uppercase;
-  font-family: "Novovento Sans Web", sans-serif;
+  font-family: "novocento", sans-serif;
   font-size: 1.1rem;
   font-weight: normal; }
 
@@ -1429,7 +1459,7 @@ a {
 
 .adventure-single .adventure-header span {
   text-transform: uppercase;
-  font-family: "Novovento Sans Web", sans-serif;
+  font-family: "novocento", sans-serif;
   font-size: 1.1rem; }
 
 .adventure-single .entry-content {

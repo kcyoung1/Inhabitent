@@ -31,7 +31,7 @@ get_header(); ?>
 							<li>
 								<a href="<?php home_url(); ?>/product-type/<?php echo $product_type->slug; ?>"><?php echo $product_type->name; ?></a>
 							</li>
-					<?php Endforeach; ?>
+					<?php endforeach; ?>
 				</ul>
 
 

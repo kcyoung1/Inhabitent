@@ -7,16 +7,16 @@
   justify-content: space-around;
   position: absolute;
   padding: 0 0 0 150px;
-  a {
+  a, i {
     color: white;
     padding: 4px;
     &:hover {
-      color: white;
+      color: #f0e4d1;
     }
     &:visited {
       color: white;
       &:hover {
-        color:white;
+      color: #f0e4d1;
       }
     }
   }
@@ -33,7 +33,7 @@
   width: 100%;
   background: rgba(255, 255, 255, 0.74);
   border-bottom: 1px solid #e1e1e1;
-  a {
+  a, i {
     color: $color__link;
     padding: 4px;
     &:hover {
@@ -45,6 +45,24 @@
         color: $color__link-visited;
       }
     }
+  }
+  .fa-search {
+  line-height: 1.5;
+  margin-right: 5px;
+  }
+  input[type=search] {
+    background: transparent;
+    color: #f0e4d1;
+    text-transform: uppercase;
+    font-family: 'novocento', sans-serif;
+    border: 0;
+    outline: none;
+    font-size: .9rem;
+    width: 200px;
+  }
+  fieldset {
+    margin: 0;
+    padding: 0;
   }
 }
 .site-header-fixed {
@@ -58,7 +76,7 @@
   width: 100%;
   background: rgba(255, 255, 255, 0.74);
   border-bottom: 1px solid #e1e1e1;
-  a {
+  a, i {
     color: $color__link;
     padding: 4px;
     &:hover {
@@ -71,6 +89,10 @@
       }
     }
   }
+  .fa-search {
+  line-height: 1.5;
+  margin-right: 5px;
+  }
   .site-title-fixed {
     background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
     background-size: 50px;
@@ -82,6 +104,20 @@
     position: absolute;
     top: 10px;
     left: 150px;
+  }
+  input[type=search] {
+    background: transparent;
+    color: #f0e4d1;
+    text-transform: uppercase;
+    font-family: 'novocento', sans-serif;
+    border: 0;
+    outline: none;
+    font-size: .9rem;
+    width: 200px;
+  }
+  fieldset {
+    margin: 0;
+    padding: 0;
   }
 }
 .home .site-title, .page-template-about .site-title, .single-adventure .site-title {
