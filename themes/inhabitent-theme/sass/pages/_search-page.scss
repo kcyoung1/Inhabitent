@@ -1,0 +1,36 @@
+.search-whole-page {
+  display: flex;
+}
+.search{
+  .site-main{
+  display: flex;
+  flex-direction: column;
+  a {
+    &:visited {
+      color: $color__link;
+      &:hover {
+        color: $color__link-visited;
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+.search-form {
+  fieldset {
+    border:0;
+    }
+  }
+  .entry-title {
+    position: relative;
+    background: none;
+    padding: 0;
+    max-width: 100%;
+  }
+  .moretag a {
+    color: black;
+  }
+}

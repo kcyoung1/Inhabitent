@@ -1509,3 +1509,33 @@ a {
       font-weight: normal; }
       .adventure-grid-item .adventure-info h3 a:hover {
         color: #f0e4d1; }
+
+.search-whole-page {
+  display: -ms-flexbox;
+  display: flex; }
+
+.search .site-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .search .site-main a:visited {
+    color: #248a83; }
+    .search .site-main a:visited:hover {
+      color: #2f1339; }
+  .search .site-main ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0; }
+
+.search .search-form fieldset {
+  border: 0; }
+
+.search .entry-title {
+  position: relative;
+  background: none;
+  padding: 0;
+  max-width: 100%; }
+
+.search .moretag a {
+  color: black; }
