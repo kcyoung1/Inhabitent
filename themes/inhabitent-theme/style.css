@@ -1561,3 +1561,6 @@ a {
     color: white; }
     .search .moretag:hover:visited {
       color: white; }
+
+.search .page-content {
+  padding-top: 10px; }
