@@ -433,17 +433,15 @@ object {
 .gallery-caption {
   display: block; }
 
+@keyframes slide {
+  100% {
+    left: 0; } }
+
 .home .site-header, .page-template-about .site-header, .single-adventure .site-header {
-  height: 50px;
   background-color: transparent;
   border-bottom: 0;
   text-shadow: 1px 1px 2px #323232;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  position: absolute;
-  padding: 0 0 0 150px; }
+  position: absolute; }
   .home .site-header a, .home .site-header i, .page-template-about .site-header a, .page-template-about .site-header i, .single-adventure .site-header a, .single-adventure .site-header i {
     color: white;
     padding: 4px; }
@@ -453,10 +451,23 @@ object {
       color: white; }
       .home .site-header a:visited:hover, .home .site-header i:visited:hover, .page-template-about .site-header a:visited:hover, .page-template-about .site-header i:visited:hover, .single-adventure .site-header a:visited:hover, .single-adventure .site-header i:visited:hover {
         color: #f0e4d1; }
+  .home .site-header input[type=search], .page-template-about .site-header input[type=search], .single-adventure .site-header input[type=search] {
+    color: white; }
+  .home .site-header ::-webkit-input-placeholder, .page-template-about .site-header ::-webkit-input-placeholder, .single-adventure .site-header ::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #f0e4d1; }
+  .home .site-header :-moz-placeholder, .page-template-about .site-header :-moz-placeholder, .single-adventure .site-header :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #f0e4d1; }
+  .home .site-header ::-moz-placeholder, .page-template-about .site-header ::-moz-placeholder, .single-adventure .site-header ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #f0e4d1; }
+  .home .site-header :-ms-input-placeholder, .page-template-about .site-header :-ms-input-placeholder, .single-adventure .site-header :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #f0e4d1; }
 
 .site-header {
   height: 50px;
-  border-bottom: 0;
   position: fixed;
   display: -ms-flexbox;
   display: flex;
@@ -478,16 +489,16 @@ object {
         color: #2f1339; }
   .site-header .fa-search {
     line-height: 1.5;
-    margin-right: 5px; }
+    margin-right: 5px;
+    cursor: pointer; }
   .site-header input[type=search] {
     background: transparent;
-    color: #f0e4d1;
     text-transform: uppercase;
     font-family: 'novocento', sans-serif;
     border: 0;
     outline: none;
-    font-size: .9rem;
-    width: 200px; }
+    width: 200px;
+    display: none; }
   .site-header fieldset {
     margin: 0;
     padding: 0; }
@@ -516,7 +527,8 @@ object {
         color: #2f1339; }
   .site-header-fixed .fa-search {
     line-height: 1.5;
-    margin-right: 5px; }
+    margin-right: 5px;
+    cursor: pointer; }
   .site-header-fixed .site-title-fixed {
     background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
     background-size: 50px;
@@ -535,8 +547,8 @@ object {
     font-family: 'novocento', sans-serif;
     border: 0;
     outline: none;
-    font-size: .9rem;
-    width: 200px; }
+    width: 200px;
+    display: none; }
   .site-header-fixed fieldset {
     margin: 0;
     padding: 0; }

@@ -1,13 +1,13 @@
 /**
  * sticky-header.js
  *
- * Helps with accessibility for keyboard only users.
- *
- * Learn more: https://github.com/Automattic/RED Starter Theme/pull/136
  */
+
+
 
 jQuery(document).ready(function($){
 
+// Sticky Header
    $window = $(window);
    $window.scroll(function() {
        if ($window.scrollTop() > 750) {
@@ -19,4 +19,5 @@ jQuery(document).ready(function($){
          $('header').addClass('site-header');
        }
     });
+
  });

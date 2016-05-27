@@ -1,12 +1,18 @@
+// key frames
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+// Navigation
 .home .site-header, .page-template-about .site-header, .single-adventure .site-header {
-  height: 50px;
   background-color: transparent;
   border-bottom: 0;
   text-shadow: 1px 1px 2px #323232;
-  display: flex;
-  justify-content: space-around;
   position: absolute;
-  padding: 0 0 0 150px;
   a, i {
     color: white;
     padding: 4px;
@@ -20,11 +26,25 @@
       }
     }
   }
+  input[type=search] {
+    color: white;
+  }
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+      color: #f0e4d1;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+     color: #f0e4d1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+     color: #f0e4d1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+     color: #f0e4d1;
+  }
 }
 
 .site-header {
   height: 50px;
-  border-bottom: 0;
   position: fixed;
   display: flex;
   justify-content: space-around;
@@ -49,16 +69,17 @@
   .fa-search {
   line-height: 1.5;
   margin-right: 5px;
+  cursor: pointer;
   }
   input[type=search] {
     background: transparent;
-    color: #f0e4d1;
     text-transform: uppercase;
     font-family: 'novocento', sans-serif;
     border: 0;
     outline: none;
-    font-size: .9rem;
     width: 200px;
+    display: none;
+
   }
   fieldset {
     margin: 0;
@@ -92,6 +113,7 @@
   .fa-search {
   line-height: 1.5;
   margin-right: 5px;
+  cursor: pointer;
   }
   .site-title-fixed {
     background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
@@ -112,14 +134,15 @@
     font-family: 'novocento', sans-serif;
     border: 0;
     outline: none;
-    font-size: .9rem;
     width: 200px;
+    display: none;
   }
   fieldset {
     margin: 0;
     padding: 0;
   }
 }
+
 .home .site-title, .page-template-about .site-title, .single-adventure .site-title {
   background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
   background-size: 50px;
