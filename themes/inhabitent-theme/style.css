@@ -525,17 +525,6 @@ object {
     line-height: 1.5;
     margin-right: 5px;
     cursor: pointer; }
-  .site-header-fixed .site-title-fixed {
-    background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
-    background-size: 50px;
-    height: 50px;
-    width: 50px;
-    overflow: hidden;
-    text-indent: 100%;
-    margin: 0;
-    position: absolute;
-    top: 10px;
-    left: 150px; }
   .site-header-fixed input[type=search] {
     background: transparent;
     color: #f0e4d1;
@@ -562,6 +551,18 @@ object {
   left: 150px; }
 
 .site-title {
+  background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+  background-size: 50px;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  text-indent: 100%;
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  left: 150px; }
+
+.site-title-fixed {
   background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
   background-size: 50px;
   height: 50px;
