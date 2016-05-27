@@ -992,21 +992,36 @@ a {
     display: inline;
     padding-left: 0;
     margin-left: 0; }
+    .adventures ul li h3 a {
+      margin-bottom: 20px; }
     .adventures ul li:first-child {
       width: 49%;
       float: left; }
+      .adventures ul li:first-child h3 a {
+        font-size: 2.75rem;
+        line-height: 1; }
     .adventures ul li:nth-child(2) {
       width: 49%;
       float: right; }
+      .adventures ul li:nth-child(2) h3 a {
+        font-size: 2.25rem;
+        line-height: 1; }
     .adventures ul li:nth-child(3) {
       width: 24%;
       float: right;
       margin-left: 1%;
-      margin-top: 1.75%; }
+      margin-top: 1.75%;
+      font-size: 1rem; }
+      .adventures ul li:nth-child(3) h3 a {
+        font-size: 1.5rem;
+        line-height: 1; }
     .adventures ul li:last-child {
       width: 24%;
       float: right;
       margin-top: 1.75%; }
+      .adventures ul li:last-child h3 a {
+        font-size: 1.5rem;
+        line-height: 1; }
 
 .canoe {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure/canoe-girl.jpg) no-repeat center center;
@@ -1033,7 +1048,8 @@ a {
   .story-wrap .story-info {
     position: absolute;
     top: 0;
-    left: 20px; }
+    left: 20px;
+    padding: 20px 10px; }
 
 .readtag {
   border: 1px solid white;
@@ -1050,7 +1066,7 @@ a {
   .readtag:active {
     outline: 0; }
   .readtag:visited {
-    color: black; }
+    color: white; }
     .readtag:visited:hover {
       color: white; }
 
@@ -1335,15 +1351,57 @@ a {
 .search-form fieldset {
   border: 0; }
 
+.single-adventure .adventure-header .entry-title {
+  margin-bottom: 0; }
+
+.single-adventure .adventure-header h1 {
+  font-size: 2.3rem; }
+
 .single-adventure .adventure-header div {
   text-align: left;
   max-width: 800px; }
 
 .single-adventure .adventure-header span {
   text-transform: uppercase;
-  font-family: "Novovento Sans Web", sans-serif; }
+  font-family: "Novovento Sans Web", sans-serif;
+  font-size: 1.1rem; }
 
 .single-adventure .entry-content {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto; }
+
+.single-adventure .social-buttons button {
+  margin-top: 0;
+  margin-bottom: 50px; }
+
+.adventure-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 30px; }
+
+.adventure-grid-item {
+  position: relative;
+  max-width: 49%;
+  margin-left: 10px; }
+  .adventure-grid-item .adventure-image {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
+    padding: 0;
+    margin-bottom: 10px; }
+  .adventure-grid-item img {
+    z-index: -1;
+    position: relative;
+    display: block; }
+  .adventure-grid-item .adventure-info {
+    position: absolute;
+    top: 0;
+    padding: 20px 20px; }
+    .adventure-grid-item .adventure-info h3 a {
+      color: white;
+      font-family: "merriweather", serif;
+      font-size: 2rem;
+      font-weight: normal; }
+      .adventure-grid-item .adventure-info h3 a:hover {
+        color: #f0e4d1; }

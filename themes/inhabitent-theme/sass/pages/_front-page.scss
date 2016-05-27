@@ -116,24 +116,44 @@
   padding-left: 0;
   margin-left: 0;
   li {
+    h3 a {
+      margin-bottom: 20px;
+    }
     &:first-child {
       width: 49%;
       float: left;
+      h3 a {
+        font-size: 2.75rem;
+        line-height: 1;
+      }
     }
     &:nth-child(2) {
       width: 49%;
       float:right;
+      h3 a {
+        font-size: 2.25rem;
+        line-height: 1;
+      }
     }
     &:nth-child(3) {
       width: 24%;
       float: right;
       margin-left: 1%;
       margin-top: 1.75%;
+      font-size: 1rem;
+      h3 a {
+        font-size: 1.5rem;
+        line-height: 1;
+      }
     }
     &:last-child {
       width: 24%;
       float: right;
       margin-top: 1.75%;
+      h3 a {
+        font-size: 1.5rem;
+        line-height: 1;
+      }
     }
   }
   }
@@ -184,6 +204,7 @@
     position: absolute;
     top: 0;
     left: 20px;
+    padding: 20px 10px;
   }
 }
 .readtag {
@@ -203,7 +224,7 @@
     outline: 0;
   }
   &:visited {
-    color: black;
+    color: white;
     &:hover {
       color:white;
     }

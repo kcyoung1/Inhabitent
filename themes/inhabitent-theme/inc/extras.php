@@ -77,7 +77,7 @@ add_action( 'wp_enqueue_scripts', 'about_header_styles_method' );
 //// Function for reordering and including 16 products on Product Page ////
 
 function inhabitent_filter_product_query( $query ) {
-	if (is_post_type_archive( 'product' ) || is_tax( 'product_type' ) && !is_admin() && $query->is_main_query() ) {
+	if (is_post_type_archive( 'adventure' ) || is_post_type_archive( 'product' ) || is_tax( 'product_type' ) && !is_admin() && $query->is_main_query() ) {
 		$query->set( 'orderyby', 'title' );
 		$query->set( 'order', 'ASC' );
 		$query->set( 'posts_per_page', 16 );

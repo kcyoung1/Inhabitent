@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The template for displaying archive products pages.
  *
  * @package inhabitent_Theme
  */
@@ -17,30 +17,26 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="product-header">
-				<h1>Shop Stuff</h1>
-				<ul class="product-links">
-					<?php $terms = get_terms(
-						array(
-						'taxonomy' => 'product_type',
-						'hide_empty' => false,) );
-
-						foreach ( $terms as $product_type) : ?>
-							<li>
-								<a href="<?php home_url(); ?>/product-type/<?php echo $product_type->slug; ?>"><?php echo $product_type->name; ?></a>
-							</li>
-					<?php Endforeach; ?>
-				</ul>
+				<h1>Latest Adventures</h1>
 
 
 			</header><!-- .page-header -->
-			<div class="product-grid">
+			<div class="adventure-grid">
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 
-						<?php
-							get_template_part( 'template-parts/content', 'product' );
-						?>
+						<div class="adventure-grid-item">
 
+								<div class="adventure-image">
+										<?php the_post_thumbnail( 'full' ); ?>
+								</div>
+
+							<div class="adventure-info">
+								<h3><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title( sprintf( '<h2 class="product-title"></h2>' )); ?></a></h3>
+								<a href="<?php the_permalink(); ?>" class="readtag">Read More</a>
+							</div> <!-- .adventure-info -->
+
+						</div><!-- .adventure-grid-item -->
 					<?php endwhile; ?>
 
 
