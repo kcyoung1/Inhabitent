@@ -547,7 +547,7 @@ object {
   text-indent: 100%;
   margin: 0;
   position: absolute;
-  top: 10px;
+  top: 5px;
   left: 150px; }
 
 .site-title {
@@ -1392,7 +1392,7 @@ a {
   -ms-flex-align: center;
       align-items: center;
   height: 100vh; }
-  .about-header h1 {
+  .about-header h2 {
     color: white;
     font-size: 3rem; }
 
@@ -1459,7 +1459,7 @@ a {
 .adventure-single .adventure-header .entry-title {
   margin-bottom: 0; }
 
-.adventure-single .adventure-header h1 {
+.adventure-single .adventure-header h2 {
   font-size: 2.3rem; }
 
 .adventure-single .adventure-header div {

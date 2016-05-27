@@ -14,7 +14,7 @@
 		<?php endif; ?>
 
 	<div class="container">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 		<span><?php inhabitent_posted_by(); ?></span>
 	</div>
 
