@@ -42,12 +42,6 @@ function inhabitent_url( $url ) {
 }
 add_filter( 'login_headerurl', 'inhabitent_url' );
 
-//////// Font Awesome ////////
-
-function enqueue_our_required_stylesheets(){
-	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
-}
-add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
 
 //// Read More Button in Journal single post ////
 
@@ -85,12 +79,3 @@ function inhabitent_filter_product_query( $query ) {
 }
 
 add_action ('pre_get_posts', 'inhabitent_filter_product_query');
-
-
-// PHP FUNCTION FOR sticky
-
-function inhabitent_sticky_script() {
-    wp_enqueue_script('sticky-header', get_template_directory_uri() . '/js/sticky-header.js', array('jquery') );
-}
-
-add_action( 'wp_enqueue_scripts', 'inhabitent_sticky_script' );
