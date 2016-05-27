@@ -79,3 +79,14 @@ function inhabitent_filter_product_query( $query ) {
 }
 
 add_action ('pre_get_posts', 'inhabitent_filter_product_query');
+
+// Archive Products and Adventures titles
+
+function inhabitent_filter_titles() {
+	if (is_post_type_archive('product')){
+		return 'Shop Stuff';
+	} else if (is_post_type_archive('adventure')){
+		return 'Latest Adventures';
+	}
+}
+add_filter('get_the_archive_title','inhabitent_filter_titles');

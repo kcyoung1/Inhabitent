@@ -90,7 +90,7 @@ function inhabitent_scripts() {
 	wp_enqueue_script('jquery');
 
 	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
-}
+
 
 	if (is_front_page() || is_page_template( 'about.php' ) || is_singular( 'adventure' )) {
 		wp_enqueue_script('sticky-header', get_template_directory_uri() . '/build/js/sticky-header.min.js', array('jquery'), false, true );
