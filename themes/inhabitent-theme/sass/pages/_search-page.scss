@@ -2,9 +2,15 @@
   display: flex;
 }
 .search{
+  .page-title {
+    font-size: 2.25rem;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 20px;
+  }
   .site-main{
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    }
   a {
     &:visited {
       color: $color__link;
@@ -18,11 +24,10 @@
     padding-left: 0;
     margin-left: 0;
   }
-}
-.search-form {
-  fieldset {
-    border:0;
-    }
+  .search-form {
+    fieldset {
+      border:0;
+      }
   }
   .entry-title {
     position: relative;
@@ -30,7 +35,26 @@
     padding: 0;
     max-width: 100%;
   }
-  .moretag a {
+  .entry-meta {
+    background: none;
     color: black;
+    position: relative;
+    padding: 0;
   }
+  .readmore {
+    margin-bottom: 30px;
+  }
+  .moretag {
+    color: black;
+    &:visited {
+      color: black;
+    }
+    &:hover {
+      color: white;
+      &:visited {
+        color: white;
+      }
+    }
+  }
+
 }

@@ -1514,19 +1514,26 @@ a {
   display: -ms-flexbox;
   display: flex; }
 
+.search .page-title {
+  font-size: 2.25rem;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 20px; }
+
 .search .site-main {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
-  .search .site-main a:visited {
-    color: #248a83; }
-    .search .site-main a:visited:hover {
-      color: #2f1339; }
-  .search .site-main ul {
-    list-style: none;
-    padding-left: 0;
-    margin-left: 0; }
+
+.search a:visited {
+  color: #248a83; }
+  .search a:visited:hover {
+    color: #2f1339; }
+
+.search ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0; }
 
 .search .search-form fieldset {
   border: 0; }
@@ -1537,5 +1544,20 @@ a {
   padding: 0;
   max-width: 100%; }
 
-.search .moretag a {
+.search .entry-meta {
+  background: none;
+  color: black;
+  position: relative;
+  padding: 0; }
+
+.search .readmore {
+  margin-bottom: 30px; }
+
+.search .moretag {
   color: black; }
+  .search .moretag:visited {
+    color: black; }
+  .search .moretag:hover {
+    color: white; }
+    .search .moretag:hover:visited {
+      color: white; }
