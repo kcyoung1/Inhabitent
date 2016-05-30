@@ -5,7 +5,7 @@
 <h2>Languages and tools used:</h2>
 <ul>
 <li>HTML</li>
-<li>CSS/SCSS</li>
+<li>CSS/SASS</li>
 <li>JavaScript</li>
 <li>PHP</li>
 <li>Git/Github</li>
