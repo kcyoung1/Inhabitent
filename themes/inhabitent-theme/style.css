@@ -1092,6 +1092,13 @@ a {
     padding-top: 40px; }
   .adventures a {
     text-decoration: none; }
+  .adventures img {
+    max-height: 620px;
+    max-width: none;
+    width: auto;
+    z-index: -1;
+    position: relative;
+    display: block; }
   .adventures ul {
     list-style: none;
     display: inline;
@@ -1102,8 +1109,6 @@ a {
     .adventures ul li:first-child {
       width: 49%;
       float: left; }
-      .adventures ul li:first-child img {
-        height: 620px; }
       .adventures ul li:first-child h3 a {
         font-size: 2.75rem;
         line-height: 1; }
@@ -1111,33 +1116,33 @@ a {
       width: 49%;
       float: right; }
       .adventures ul li:nth-child(2) img {
-        height: 300px; }
+        height: 300px;
+        width: 100%; }
       .adventures ul li:nth-child(2) h3 a {
         font-size: 2.25rem;
         line-height: 1; }
-    .adventures ul li:nth-child(3) {
+    .adventures ul li:nth-child(3), .adventures ul li:last-child {
       width: 24%;
       float: right;
       margin-left: 1%;
-      margin-top: 1.1%;
+      margin-top: 1.75%;
       font-size: 1rem; }
-      .adventures ul li:nth-child(3) img {
+      .adventures ul li:nth-child(3) img, .adventures ul li:last-child img {
         height: 300px; }
-      .adventures ul li:nth-child(3) h3 a {
-        font-size: 1.5rem;
-        line-height: 1; }
-    .adventures ul li:last-child {
-      width: 24%;
-      float: right;
-      margin-top: 1.1%; }
-      .adventures ul li:last-child img {
-        height: 300px; }
-      .adventures ul li:last-child h3 a {
+      .adventures ul li:nth-child(3) h3 a, .adventures ul li:last-child h3 a {
         font-size: 1.5rem;
         line-height: 1; }
 
 .story-wrap {
-  position: relative; }
+  position: relative;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .story-wrap .adventure-image {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
+    padding: 0; }
   .story-wrap .story-info {
     position: absolute;
     top: 0;

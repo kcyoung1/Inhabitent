@@ -83,7 +83,7 @@ get_header(); ?>
 		<h2>Latest Adventures</h2>
 		<section class="adventures container">
 
-			<ul>
+			<ul class="clearfix">
 
 				<?php
 					$query = new WP_Query( array(
@@ -97,7 +97,7 @@ get_header(); ?>
 
 					<li>
 						<div class="story-wrap">
-							<div class="adventure-picture">
+							<div class="adventure-image">
 								<?php the_post_thumbnail( 'full' ); ?>
 							</div>
 							<div class="story-info">
