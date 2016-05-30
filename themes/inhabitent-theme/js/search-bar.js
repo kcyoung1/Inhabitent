@@ -1,6 +1,5 @@
 /**
  * search-bar.js
- *
  */
 
 // Search Bar

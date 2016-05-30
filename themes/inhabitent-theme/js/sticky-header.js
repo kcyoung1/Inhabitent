@@ -1,6 +1,5 @@
 /**
  * sticky-header.js
- *
  */
 
 
@@ -9,7 +8,7 @@ jQuery(document).ready(function($){
 
    $window = $(window);
    $window.scroll(function() {
-     
+
        if ($window.scrollTop() > 750) {
          $('header').addClass('site-header-fixed');
          $('header').removeClass('site-header');

@@ -21,7 +21,9 @@ function inhabitent_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'inhabitent_body_classes' );
 
-// Removes editor in the CMS in WP
+///// My Functions /////
+
+//// Removes editor in the CMS in WP ////
 
 function inhabitent_remove_submenus() {
     remove_submenu_page( 'themes.php', 'theme-editor.php' );
@@ -29,7 +31,7 @@ function inhabitent_remove_submenus() {
 }
 add_action( 'admin_init', 'inhabitent_remove_submenus', 102 );
 
-// Customizing Login Page
+//// Customizing Login Page ////
 
 function inhabitent_custom_login() {
 	echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/customlogin.css" />';
@@ -80,7 +82,7 @@ function inhabitent_filter_product_query( $query ) {
 
 add_action ('pre_get_posts', 'inhabitent_filter_product_query');
 
-// Archive Products and Adventures titles
+//// Archive Products and Adventures titles ////
 
 function inhabitent_filter_titles() {
 	if (is_post_type_archive('product')){

@@ -1,4 +1,4 @@
-// Navigation
+/* Navigation Bar */
 
 .home .site-header, .page-template-about .site-header, .single-adventure .site-header {
   background-color: transparent;
@@ -33,7 +33,7 @@
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
      color: #f0e4d1;
   }
-}
+} // .home .site-header, .page-template-about .site-header, .single-adventure .site-header
 
 .site-header {
   height: 50px;
@@ -76,7 +76,8 @@
     margin: 0;
     padding: 0;
   }
-}
+} // .site-header
+
 .site-header-fixed {
   height: 50px;
   border-bottom: 0;
@@ -120,7 +121,7 @@
     margin: 0;
     padding: 0;
   }
-}
+} // .site-header-fixed
 
 .home .site-title, .page-template-about .site-title, .single-adventure .site-title {
   background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
