@@ -29,7 +29,7 @@ a {
 .main-navigation {
 	display: flex;
 	justify-content: flex-end;
-	font-family: 'Novecento Sans Web',sans-serif;
+	font-family: $font__pre;
   text-transform: uppercase;
 	ul {
 		display: none;

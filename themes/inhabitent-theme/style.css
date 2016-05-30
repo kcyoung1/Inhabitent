@@ -230,6 +230,8 @@ select,
 textarea {
   color: #404040;
   font-family: "merriweather", serif;
+  font-weight: normal;
+  font-style: normal;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.75; }
@@ -304,14 +306,14 @@ big {
 
 @font-face {
   font-family: 'novocento';
-  src: url("../../fonts/novocento/novocentosanswide-normal-webfont.woff2") format("woff2"), url("../../fonts/novocento/novocentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/novocento/novocentosanswide-normal-webfont.svg") format("svg"), url("../../fonts/novocento/novocentosanswide-normal-webfont.ttf") format("ttf") url("../../fonts/novocento/novocentosanswide-normal-webfont.eot") format("eot");
-  font-weight: bold;
+  src: url("../../fonts/novocento/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../fonts/novocento/novocentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/novocento/novocentosanswide-normal-webfont.svg") format("svg"), url("../../fonts/novocento/novocentosanswide-normal-webfont.ttf") format("ttf"), url("../../fonts/novocento/novocentosanswide-normal-webfont.eot") format("eot");
+  font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'novocento';
-  src: url("../../fonts/novocento/novocentosanswide-demibold-webfont.woff2") format("woff2"), url("../../fonts/novocento/novocentosanswide-demibold-webfont.woff") format("woff"), url("../../fonts/novocento/novocentosanswide-demibold-webfont.svg") format("svg"), url("../../fonts/novocento/novocentosanswide-demibold-webfont.ttf") format("ttf") url("../../fonts/novocento/novocentosanswide-demibold-webfont.eot") format("eot");
-  font-weight: normal;
+  src: url("../../fonts/novocento/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../fonts/novocento/novocentosanswide-demibold-webfont.woff") format("woff"), url("../../fonts/novocento/novocentosanswide-demibold-webfont.svg") format("svg"), url("../../fonts/novocento/novocentosanswide-demibold-webfont.ttf") format("ttf"), url("../../fonts/novocento/novocentosanswide-demibold-webfont.eot") format("eot");
+  font-weight: bold;
   font-style: normal; }
 
 /*--------------------------------------------------------------
@@ -433,6 +435,7 @@ object {
 .gallery-caption {
   display: block; }
 
+/* Navigation Bar */
 .home .site-header, .page-template-about .site-header, .single-adventure .site-header {
   background-color: transparent;
   border-bottom: 0;
@@ -615,6 +618,7 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+/* Comments */
 .comments-title {
   line-height: 1.25;
   font-size: 2rem;
@@ -740,7 +744,7 @@ a {
   display: flex;
   -ms-flex-pack: end;
       justify-content: flex-end;
-  font-family: 'Novecento Sans Web',sans-serif;
+  font-family: "novocento", sans-serif;
   text-transform: uppercase; }
   .main-navigation ul {
     display: none;
@@ -956,6 +960,7 @@ a {
 .bypostauthor {
   display: block; }
 
+/* Footer */
 .site-footer {
   background: url(../../images/dark-wood.png);
   background-size: 350px 512px;
@@ -1025,6 +1030,7 @@ a {
 .logo {
   height: 275px; }
 
+/* Shop Stuff */
 .shop-stuff {
   display: -ms-flexbox;
   display: flex;
@@ -1044,6 +1050,7 @@ a {
     height: 70px;
     width: auto; }
 
+/* Journal Post */
 .journal-post {
   list-style: none;
   padding-left: 0;
@@ -1078,6 +1085,7 @@ a {
         .journal-post .journal-info h3 a:hover {
           color: #2f1339; }
 
+/* Latest Adventures */
 .adventures {
   margin-bottom: 70px; }
   .adventures h3 a {
@@ -1183,6 +1191,7 @@ a {
     .button:visited:hover {
       color: white; }
 
+/* Header of Shop Page */
 .product-links {
   list-style: none;
   display: -ms-flexbox;
@@ -1200,6 +1209,7 @@ a {
       .product-links li a:hover {
         color: #2f1339; }
 
+/* Product Grid Area */
 .product-area {
   width: 1120px;
   padding-top: 20px;
@@ -1269,9 +1279,11 @@ a {
   .product-grid .product-price {
     padding-left: 2px; }
 
+/* Product Category Page */
 .product-tax-page {
   text-align: center; }
 
+/* Single Product Page */
 .single-product-content .type-product {
   display: -ms-flexbox;
   display: flex; }
@@ -1379,6 +1391,7 @@ a {
   padding: 5px 30px;
   margin-top: 30px; }
 
+/* About Page */
 .about-header {
   display: -ms-flexbox;
   display: flex;
@@ -1404,6 +1417,7 @@ a {
     font-size: 2rem;
     color: #2f1339; }
 
+/* Find Us Page */
 .status-publish h1 {
   font-size: 2.5rem; }
 
@@ -1429,28 +1443,7 @@ a {
   font-size: .9rem;
   padding: 8px 22.5px; }
 
-.error-whole-page {
-  display: -ms-flexbox;
-  display: flex; }
-
-.error-404 .error-content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  width: 73%; }
-  .error-404 .error-content a:visited {
-    color: #248a83; }
-    .error-404 .error-content a:visited:hover {
-      color: #2f1339; }
-  .error-404 .error-content ul {
-    list-style: none;
-    padding-left: 0;
-    margin-left: 0; }
-
-.search-form fieldset {
-  border: 0; }
-
+/* Single Adventure Page */
 .adventure-single .adventure-header .entry-title {
   margin-bottom: 0; }
 
@@ -1475,6 +1468,7 @@ a {
   margin-top: 0;
   margin-bottom: 50px; }
 
+/* Archive Adventure */
 .adventure-grid {
   display: -ms-flexbox;
   display: flex;
@@ -1506,6 +1500,30 @@ a {
       .adventure-grid-item .adventure-info h3 a:hover {
         color: #f0e4d1; }
 
+/* Error 404 Page */
+.error-whole-page {
+  display: -ms-flexbox;
+  display: flex; }
+
+.error-404 .error-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 73%; }
+  .error-404 .error-content a:visited {
+    color: #248a83; }
+    .error-404 .error-content a:visited:hover {
+      color: #2f1339; }
+  .error-404 .error-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0; }
+
+.search-form fieldset {
+  border: 0; }
+
+/* Search Page */
 .search-whole-page {
   display: -ms-flexbox;
   display: flex; }
