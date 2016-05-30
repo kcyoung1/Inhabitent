@@ -19,6 +19,7 @@ get_header(); ?>
 			<!-- Shop Stuff -->
 
 			<h2>Shop Stuff</h2>
+
 				<section class="shop-stuff">
 					<?php
 					$terms = get_terms(
@@ -37,7 +38,8 @@ get_header(); ?>
 							<a href="<?php echo get_term_link($product_type, 'product-type'); ?>" class="button"><?php echo $product_type->name; ?> Stuff</a>
 
 					</div>
-				<?php endforeach; wp_reset_postdata();?>
+				<?php endforeach;
+							wp_reset_postdata();?>
 
 				</section>
 
@@ -47,10 +49,13 @@ get_header(); ?>
 			<h2>Inhabitent Journal</h2>
 			<ul class="journal-post container">
 			<?php
-				$args = array( 'posts_per_page' => 3, 'order'=> 'DESC', 'orderby' => 'date' );
+				$args = array(
+					'posts_per_page' => 3,
+					'order'=> 'DESC',
+					'orderby' => 'date' );
 				$postslist = get_posts( $args );
 				foreach ( $postslist as $post ) :
-				setup_postdata( $post ); ?>
+				setup_postdata( $post ) ; ?>
 
 						<li >
 							<div class="journal-picture">
@@ -65,17 +70,43 @@ get_header(); ?>
 								<a class="moretag" href="<?php the_permalink(); ?>">Read Entry</a>
 							</div>
 
-
 						</li>
-				<?php
-				endforeach;
-				wp_reset_postdata();
-				?>
+				<?php endforeach;
+							wp_reset_postdata(); ?>
+
 				</ul>
+
+
 
 			<!-- Latest Adventures -->
 
-				<!-- Stretch goal - Mandi used floats -->
+			<ul>
+
+	<?php
+$query = new WP_Query( array(
+	'post_type' => 'adventure',
+ 	'order' => 'ASC',
+	'orderby' => 'date',
+	'posts_per_page' => 4)
+);
+
+while ( $query->have_posts() ) : $query->the_post(); ?>
+
+			<li >
+				<div class="adventure-picture">
+					<?php the_post_thumbnail( 'full' ); ?>
+				</div>
+				<div class="adventure-info">
+					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+					<a class="readtag" href="<?php the_permalink(); ?>">Read More</a>
+				</div>
+			</li>
+
+		<?php endwhile;
+							wp_reset_postdata(); ?>
+		</ul>
+
+				<!-- Mandi used floats -->
 				<section class="adventures container">
 					<h2>Latest Adventures</h2>
 					<ul class="clearfix">

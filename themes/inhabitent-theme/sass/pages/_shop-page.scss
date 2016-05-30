@@ -12,6 +12,9 @@
     text-transform: uppercase;
     a {
       color: $color__link;
+      &:hover {
+        color: $color__link-visited;
+      }
     }
   }
 }

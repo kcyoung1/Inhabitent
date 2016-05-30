@@ -8,11 +8,8 @@
 get_header(); ?>
 <div class="page-content">
 
-
 	<div id="primary" class="product-area">
 		<main id="main" class="site-main" role="main">
-
-
 
 		<?php if ( have_posts() ) : ?>
 

@@ -8,11 +8,8 @@
 get_header(); ?>
 <div class="page-content">
 
-
 	<div id="primary" class="product-area">
 		<main id="main" class="site-main" role="main">
-
-
 
 		<?php if ( have_posts() ) : ?>
 
@@ -22,10 +19,9 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-			<div class="adventure-grid">
-					<?php /* Start the Loop */ ?>
-					<?php while ( have_posts() ) : the_post(); ?>
 
+			<div class="adventure-grid">
+					<?php while ( have_posts() ) : the_post(); ?>
 						<div class="adventure-grid-item">
 
 								<div class="adventure-image">
@@ -38,6 +34,7 @@ get_header(); ?>
 							</div> <!-- .adventure-info -->
 
 						</div><!-- .adventure-grid-item -->
+
 					<?php endwhile; ?>
 
 
@@ -46,7 +43,8 @@ get_header(); ?>
 					<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 				<?php endif; ?>
-			</div><!-- .product-grid-item -->
+			</div><!-- .adventure-grid -->
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div>

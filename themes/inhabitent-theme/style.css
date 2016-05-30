@@ -559,7 +559,7 @@ object {
   text-indent: 100%;
   margin: 0;
   position: absolute;
-  top: 10px;
+  top: 5px;
   left: 150px; }
 
 .site-title-fixed {
@@ -571,7 +571,7 @@ object {
   text-indent: 100%;
   margin: 0;
   position: absolute;
-  top: 10px;
+  top: 5px;
   left: 150px; }
 
 .header-bar {
@@ -1204,6 +1204,8 @@ a {
     text-transform: uppercase; }
     .product-links li a {
       color: #248a83; }
+      .product-links li a:hover {
+        color: #2f1339; }
 
 .product-area {
   width: 1120px;

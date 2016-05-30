@@ -8,6 +8,7 @@
 // Add your custom post types here...
 // Register Custom Post Type
 
+// Product Post Type
 function inhabitent_register_product_cpt() {
 
 	$labels = array(
@@ -109,7 +110,7 @@ function inhabitent_adventure_post() {
 		'has_archive'           => 'adventures',
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
-		'capability_type'       => 'page',
+		'capability_type'       => 'post',
 	);
 	register_post_type( 'adventure', $args );
 
