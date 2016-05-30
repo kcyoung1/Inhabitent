@@ -18,6 +18,7 @@ get_header(); ?>
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
+
 				<ul class="product-links">
 					<?php $terms = get_terms(
 						array(
@@ -29,10 +30,9 @@ get_header(); ?>
 								<a href="<?php home_url(); ?>/product-type/<?php echo $product_type->slug; ?>"><?php echo $product_type->name; ?></a>
 							</li>
 					<?php endforeach; ?>
-				</ul>
+				</ul><!-- .product-links -->
+			</header><!-- .product-header -->
 
-
-			</header><!-- .page-header -->
 			<div class="product-grid">
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
@@ -43,14 +43,15 @@ get_header(); ?>
 
 					<?php endwhile; ?>
 
-
 				<?php else : ?>
 
 					<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 				<?php endif; ?>
+
 			</div><!-- .product-grid-item -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
-</div>
+</div><!-- .page-content -->
+
 <?php get_footer(); ?>

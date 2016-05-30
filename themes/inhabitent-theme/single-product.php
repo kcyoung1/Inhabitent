@@ -32,6 +32,7 @@ get_header(); ?>
 							'after'  => '</div>',
 						) );
 					?>
+
 					<footer class="entry-footer">
 						<?php inhabitent_entry_footer(); ?>
 						<div class="social-buttons">
@@ -40,6 +41,7 @@ get_header(); ?>
 							<button type="button" name="button" class="moretag"><i class="fa fa-pinterest"></i> Pin</button>
 						</div>
 					</footer><!-- .entry-footer -->
+
 				</div><!-- .entry-content -->
 
 
@@ -49,6 +51,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+</div><!-- .single-product-content -->
 
-</div>
 <?php get_footer(); ?>

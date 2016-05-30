@@ -29,6 +29,7 @@
 				<?php get_search_form(); ?>
 
 			<?php endif; ?>
+			
 		</div><!-- .error-content -->
 	</div><!-- .page-content -->
 </section><!-- .no-results -->

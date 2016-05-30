@@ -9,6 +9,7 @@
 
 get_header(); ?>
 <div class="error-whole-page container">
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -25,6 +26,7 @@ get_header(); ?>
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
 					<?php if ( inhabitent_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+						
 					<div class="widget widget_categories">
 						<h2 class="widget-title"><?php echo esc_html( 'Most Used Categories' ); ?></h2>
 						<ul>
@@ -39,6 +41,7 @@ get_header(); ?>
 						?>
 						</ul>
 					</div><!-- .widget -->
+
 					<?php endif; ?>
 
 					<?php
@@ -46,12 +49,13 @@ get_header(); ?>
 						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 					?>
 
-				</div><!-- .page-content -->
+				</div><!-- .error-content -->
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-<?php get_sidebar(); ?>
-</div>
+
+	<?php get_sidebar(); ?>
+</div><!-- .error-whole-page -->
 
 <?php get_footer(); ?>

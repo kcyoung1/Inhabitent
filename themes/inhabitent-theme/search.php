@@ -38,6 +38,8 @@ get_header(); ?>
 		</main><!-- #main -->
 
 	</section><!-- #primary -->
-		<?php get_sidebar(); ?>
-		</div>
+
+	<?php get_sidebar(); ?>
+</div><!-- .search-whole-page -->
+
 <?php get_footer(); ?>

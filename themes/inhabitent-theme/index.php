@@ -27,7 +27,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+				<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
 
@@ -38,6 +38,7 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
-</div>
+	<?php get_sidebar(); ?>
+</div><!-- .page-content -->
+
 <?php get_footer(); ?>

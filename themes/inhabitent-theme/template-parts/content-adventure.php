@@ -18,7 +18,7 @@
 		<span><?php inhabitent_posted_by(); ?></span>
 	</div>
 
-</section><!-- .entry-header -->
+</section><!-- .adventure-header -->
 
 	<div class="entry-content container">
 		<?php the_content(); ?>

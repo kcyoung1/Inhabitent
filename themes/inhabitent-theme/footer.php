@@ -6,11 +6,11 @@
  */
 
 ?>
-
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="overall-block">
+
 					<div class="block">
 						<div class="contact-info">
 							<h3>Contact Info</h3>
@@ -28,7 +28,8 @@
 								<i class="fa fa-google-plus-square"></i>
 							</p>
 						</div>
-					</div>
+					</div><!-- .block -->
+
 					<div class="block">
 						<div class="business-hours">
 							<h3>Business Hours</h3>
@@ -42,19 +43,21 @@
 								<span class="days">Sunday:</span> Closed
 							</p>
 						</div>
-					</div>
+					</div><!-- .block -->
+
 					<div class="block">
 						<div class="footer-logo">
 							<a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" alt="Inhabitent Logo" /></a>
 						</div>
-					</div>
-				</div>
+					</div><!-- .block -->
+				</div><!-- .overall-block -->
 
 				<div class="site-info">
 					<div class="container">
 						copyright &copy; <span class="year">2016</span> inhabitent
 					</div>
 				</div><!-- .site-info -->
+				
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
