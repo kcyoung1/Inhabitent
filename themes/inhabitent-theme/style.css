@@ -1102,12 +1102,16 @@ a {
     .adventures ul li:first-child {
       width: 49%;
       float: left; }
+      .adventures ul li:first-child img {
+        height: 620px; }
       .adventures ul li:first-child h3 a {
         font-size: 2.75rem;
         line-height: 1; }
     .adventures ul li:nth-child(2) {
       width: 49%;
       float: right; }
+      .adventures ul li:nth-child(2) img {
+        height: 300px; }
       .adventures ul li:nth-child(2) h3 a {
         font-size: 2.25rem;
         line-height: 1; }
@@ -1115,38 +1119,22 @@ a {
       width: 24%;
       float: right;
       margin-left: 1%;
-      margin-top: 1.75%;
+      margin-top: 1.1%;
       font-size: 1rem; }
+      .adventures ul li:nth-child(3) img {
+        height: 300px; }
       .adventures ul li:nth-child(3) h3 a {
         font-size: 1.5rem;
         line-height: 1; }
     .adventures ul li:last-child {
       width: 24%;
       float: right;
-      margin-top: 1.75%; }
+      margin-top: 1.1%; }
+      .adventures ul li:last-child img {
+        height: 300px; }
       .adventures ul li:last-child h3 a {
         font-size: 1.5rem;
         line-height: 1; }
-
-.canoe {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure/canoe-girl.jpg) no-repeat center center;
-  background-size: cover, cover;
-  height: 620px; }
-
-.bonfire {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure/beach-bonfire.jpg) no-repeat center center;
-  background-size: cover, cover;
-  height: 300px; }
-
-.hikers {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure/mountain-hikers.jpg) no-repeat center center;
-  background-size: cover, cover;
-  height: 300px; }
-
-.night-sky {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure/night-sky.jpg) no-repeat center center;
-  background-size: cover, cover;
-  height: 300px; }
 
 .story-wrap {
   position: relative; }

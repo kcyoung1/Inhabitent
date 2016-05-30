@@ -80,74 +80,40 @@ get_header(); ?>
 
 			<!-- Latest Adventures -->
 
+		<h2>Latest Adventures</h2>
+		<section class="adventures container">
+
 			<ul>
 
-	<?php
-$query = new WP_Query( array(
-	'post_type' => 'adventure',
- 	'order' => 'ASC',
-	'orderby' => 'date',
-	'posts_per_page' => 4)
-);
+				<?php
+					$query = new WP_Query( array(
+						'post_type' => 'adventure',
+					 	'order' => 'ASC',
+						'orderby' => 'date',
+						'posts_per_page' => 4)
+					);
 
-while ( $query->have_posts() ) : $query->the_post(); ?>
+					while ( $query->have_posts() ) : $query->the_post(); ?>
 
-			<li >
-				<div class="adventure-picture">
-					<?php the_post_thumbnail( 'full' ); ?>
-				</div>
-				<div class="adventure-info">
-					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-					<a class="readtag" href="<?php the_permalink(); ?>">Read More</a>
-				</div>
-			</li>
-
-		<?php endwhile;
-							wp_reset_postdata(); ?>
-		</ul>
-
-				<!-- Mandi used floats -->
-				<section class="adventures container">
-					<h2>Latest Adventures</h2>
-					<ul class="clearfix">
-						<li>
-							<div class="story-wrap canoe">
-								<div class="story-info">
-									<h3><a href="/adventure/getting-back-to-nature-in-a-canoe/">Getting Back to Nature in a Canoe</a></h3>
-									<a href="/adventure/getting-back-to-nature-in-a-canoe/" class="readtag">Read More</a>
-								</div>
+					<li>
+						<div class="story-wrap">
+							<div class="adventure-picture">
+								<?php the_post_thumbnail( 'full' ); ?>
 							</div>
-						</li>
-						<li>
-							<div class="story-wrap bonfire">
-								<div class="story-info">
-									<h3><a href="/adventure/a-night-with-friends-at-the-beach/">A Night with Friends at the Beach</a></h3>
-									<a href="/adventure/a-night-with-friends-at-the-beach/" class="readtag">Read More</a>
-								</div>
+							<div class="story-info">
+								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+								<a class="readtag" href="<?php the_permalink(); ?>">Read More</a>
 							</div>
-						</li>
-						<li>
-							<div class="story-wrap hikers">
-								<div class="story-info">
-									<h3><a href="/adventure/taking-in-the-view-at-big-mountain/">Taking in the View at Big Mountain</a></h3>
-									<a href="/adventure/taking-in-the-view-at-big-mountain/" class="readtag">Read More</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="story-wrap night-sky">
-								<div class="story-info">
-									<h3><a href="/adventure/star-gazing-at-the-night-sky/">Star-Gazing at the Night Sky</a></h3>
-									<a href="/adventure/star-gazing-at-the-night-sky/" class="readtag">Read More</a>
-								</div>
-							</div>
-						</li>
-					</ul>
-					<p class="clearfix">
-						<a href="/adventures" class="button">More Adventures</a>
-					</p>
-				</section>
+						</div>
+					</li>
 
+				<?php endwhile;
+									wp_reset_postdata(); ?>
+			</ul>
+			<p class="clearfix">
+				<a href="/adventures" class="button">More Adventures</a>
+			</p>
+		</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
