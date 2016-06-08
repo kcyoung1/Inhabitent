@@ -5,6 +5,9 @@
 @font-face {
     font-family: 'merriweather';
     src: url('../../fonts/merriweather/merriweather-bold-webfont.woff2') format('woff2'),
+    url('../../fonts/merriweather/merriweather-bold-webfont.svg') format('svg'),
+    url('../../fonts/merriweather/merriweather-bold-webfont.ttf') format('ttf'),
+    url('../../fonts/merriweather/merriweather-bold-webfont.eot') format('eot'),
          url('../../fonts/merriweather/merriweather-bold-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
@@ -14,6 +17,9 @@
 @font-face {
     font-family: 'merriweather';
     src: url('../../fonts/merriweather/merriweather-bolditalic-webfont.woff2') format('woff2'),
+    url('../../fonts/merriweather/merriweather-bolditalic-webfont.svg') format('svg'),
+    url('../../fonts/merriweather/merriweather-bolditalic-webfont.ttf') format('ttf'),
+    url('../../fonts/merriweather/merriweather-bolditalic-webfont.eot') format('eot'),
          url('../../fonts/merriweather/merriweather-bolditalic-webfont.woff') format('woff');
     font-weight: bold;
     font-style: italic;
@@ -23,6 +29,9 @@
 @font-face {
     font-family: 'merriweather';
     src: url('../../fonts/merriweather/merriweather-light-webfont.woff2') format('woff2'),
+    url('../../fonts/merriweather/merriweather-light-webfont.svg') format('svg'),
+    url('../../fonts/merriweather/merriweather-light-webfont.ttf') format('ttf'),
+    url('../../fonts/merriweather/merriweather-light-webfont.eot') format('eot'),
          url('../../fonts/merriweather/merriweather-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
