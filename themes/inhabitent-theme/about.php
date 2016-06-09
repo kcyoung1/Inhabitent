@@ -12,7 +12,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="about-header">
-				<h2>About</h2>
+				<h2><?php echo the_title(); ?></h2>
 			</section><!-- .about-header -->
 
 			<section class="about-container">
@@ -23,7 +23,7 @@ get_header(); ?>
 					<h2 class="about-title">Our Team</h2>
 						<?php echo CFS()->get( 'our_team' ); ?>
 				</div><!-- .about-paragraphs -->
-				
+
 			</section><!-- .about-container -->
 
 		</main><!-- #main -->

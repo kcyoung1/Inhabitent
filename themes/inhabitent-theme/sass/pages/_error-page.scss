@@ -3,10 +3,16 @@
 .error-whole-page {
   display: flex;
 }
-.error-404 .error-content{
-  display: flex;
-  flex-direction: column;
-  width: 73%;
+.error-404 {
+  .error-content{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+  }
+  .page-title {
+    font-size: 2.5rem;
+    width: 800px;
+  }
   a {
     &:visited {
       color: $color__link;
