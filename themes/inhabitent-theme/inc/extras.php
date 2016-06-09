@@ -34,7 +34,7 @@ add_action( 'admin_init', 'inhabitent_remove_submenus', 102 );
 //// Customizing Login Page ////
 
 function inhabitent_custom_login() {
-	echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/customlogin.css" />';
+	echo '<link rel="stylesheet" type="text/css" href="' . get_stylesheet_directory_uri() . '/customlogin.css" />';
 }
 
 add_action('login_head', 'inhabitent_custom_login');
