@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redacademy/redstarter.git"
+    "url": "git+https://github.com/kcyoung1/Project_4-Inhabitent"
   },
-  "author": "mandiwise",
+  "author": "kurtisyoung",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/redacademy/redstarter/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/redacademy/redstarter#readme"
+  "homepage": ""
 }
