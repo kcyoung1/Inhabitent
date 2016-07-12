@@ -2,19 +2,14 @@
 ![p4-inhabitent](https://cloud.githubusercontent.com/assets/18318804/16755250/43b42aa4-47af-11e6-9ce2-902478270b7d.jpg)
 
 ## Summary
-A custom WordPress theme for an ecommerce website written using PHP, JQuery, and CSS/SASS. It features a custom post type, a custom taxonomy, a custom widget, as well as a custom plugin. The about page is a custom template page which allows the client to change the hero image within the WordPress CMS.
+A custom WordPress theme written using PHP, JQuery, and CSS/SASS. It features a 2 custom post type, a custom taxonomy, a custom widget, custom field suites, and a custom plugin. The about page is a custom template page which allows the client to change the hero image within the WordPress CMS.
 
-## Languages and tools used:
-- WordPress CMS
-- WordPress Underscore (theme basis)
-- CSS/SASS
-- JavaScript/JQuery
-- PHP
-- Git/Github
-- Vagrant
-- Gulp
+## Custom Post Types:
+- Products
+- Adventures
 
-## What did I learn?
-I was comfortable navigating around the WordPress CMS as I have made a blog before but creating a custom theme was entirely new to me. The amount of detail and organization required to complete the project was extensive but seeing the final product was very rewarding. PHP as a language has a lot of uses, especially when it is written directly into the HTML. It was interesting to see The WordPress Loop first hand, how it functions and how you can customize it to match your needs.
+## Custom Taxonomy:
+- Prices of products
 
-The hierarchy of WordPress is confusing at first but once you get the hang out it, it makes customizing individual pages much easier. The requirements for this project did not require it to be mobile responsive but I plan to refactor it in the near future.
+## Custom Widget:
+- Business Hours Widget
